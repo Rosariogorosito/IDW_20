@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reservar Turno</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Clínica Medica Profesionales de la salud</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="institucional.html">Información Institucional</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+                <li><a href="reservas.html">Reservar Turno</a></li>
+                <li><a href="admin.html">Administración</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h2>Reservar Turno</h2>
+        <form id="reservation-form">
+            <label for="medico">Seleccionar Médico:</label>
+            <select id="medico" name="medico">
+                <!-- Opciones de médicos -->
+            </select>
+            <label for="especialidad">Seleccionar Especialidad:</label>
+            <select id="especialidad" name="especialidad">
+                <!-- Opciones de especialidades -->
+            </select>
+            <label for="obra-social">Seleccionar Obra Social:</label>
+            <select id="obra-social" name="obra-social">
+                <!-- Opciones de obras sociales -->
+            </select>
+            <label for="fecha">Fecha:</label>
+            <input type="date" id="fecha" name="fecha" required>
+            <label for="hora">Hora:</label>
+            <input type="time" id="hora" name="hora" required>
+            <button type="submit">Reservar</button>
+        </form>
+        <div id="reservation-summary">
+            <!-- Resumen de la reserva -->
+        </div>
+    </main>
+    <footer>
+        <p>&copy; 2024 Clínica Salud Integral. Todos los derechos reservados.</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
