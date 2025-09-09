@@ -1,0 +1,78 @@
+.titulo-form {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #333;
+}
+form {
+  max-width: 500px;
+  margin: 30px auto;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 12px;
+  box-shadow: 0px 4px 10px rgba(0,0,0,0.1);
+  font-family: Arial, sans-serif;
+}
+
+form div {
+  margin-bottom: 15px;
+}
+
+label {
+  display: block;
+  margin-bottom: 6px;
+  font-weight: bold;
+  color: #333;
+}
+
+input, textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #bbb;
+  border-radius: 8px;
+  font-size: 14px;
+  transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+input:focus, textarea:focus {
+  border-color: #0066cc;
+  box-shadow: 0 0 5px rgba(0,102,204,0.5);
+  outline: none;
+}
+
+textarea {
+  resize: vertical;
+  min-height: 100px;
+}
+
+button {
+  display: inline-block;
+  width: 100%;
+  padding: 12px;
+  background-color: #0066cc;
+  color: white;
+  font-size: 16px;
+  font-weight: bold;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.2s;
+}
+
+button:hover {
+  background-color: #0052a3;
+  transform: scale(1.02);
+}
+
+/* 📱 Responsividad */
+@media (max-width: 600px) {
+  form {
+    margin: 15px;
+    padding: 15px;
+    border-radius: 8px;
+  }
+
+  button {
+    font-size: 14px;
+    padding: 10px;
+  }
+}
