@@ -1,27 +1,43 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Clinica Medica | Nosotros</title>
-    <link rel="stylesheet" href="estilos.css">
-</head>
-<body>
+    <title>Clínica Médica - Tu salud, nuestra prioridad</title>
+    <meta name="description"
+        content="Atención médica profesional con especialistas altamente calificados. Reserva tu turno de forma rápida y sencilla en nuestro sistema online.">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="./assets/logo-header.png">
     
-    <!--Aca navegamos perri-->
-    <header>
+</head>
+
+<body>
+    <header class="header">
         <div class="container">
-            <h1 class="logo">Medicare</h1>
-            <nav>
-                <u1>
-                    <li><a href="./index.html#inicio">Inicio</a></li>
-                    <li><a href="./index.html#servicios">Servicios</a></li>
-                    <li><a href="./profesionales.html">Profesionales</a></li>
-                    <li><a href="#historia" class="active">Nosotros</a></li>
-                    <li><a href="./contacto.html">Contacto</a></li>
-                </u1>
-            </nav>
-        </div>    
+            <div class="header-content">
+                <div class="header-logo">
+                    <img src="./assets/logo-header.png" alt="logo clinica" class="header-logo-img">
+                    <div class="header-logo-text">
+                        <h1 class="header-logo-title">Clínica Médica</h1>
+                        <p class="header-logo-subtitle">Medicina de la salud</p>
+                    </div>
+                </div>
+
+                <nav class="header-nav">
+                    <ul class="nav-list">
+                        <li class="nav-item"><a href="./index.html#inicio" class="nav-link nav-link--active">Inicio</a>
+                        </li>
+                        <li class="nav-item"><a href="./index.html#servicios" class="nav-link">Servicios</a></li>
+                        <li class="nav-item"><a href="./profesionales.html" class="nav-link">Profesionales</a></li>
+                        <li class="nav-item"><a href="./institucional.html" class="nav-link">Nosotros</a></li>
+                        <li class="nav-item"><a href="#form-contact" class="nav-link">Contacto</a></li>
+                    </ul>
+                </nav>
+
+                <a href="#form-contact" class="btn btn--primary header-cta">Reservar Turno</a>
+            </div>
+        </div>
     </header>
 
     <!--Aca Presentamos-->
@@ -112,24 +128,60 @@
 </section>
 
 <!--Pie de pagina-->
-<footer class="container">
-    <div class="grid-3">
-        <div>
-            <h6>Contacto</h6>
-            <p>Av. Siempreviva 742, Springfield</p>
-            <p>+54 9 0303456</p>
-            <p>info@clinicamedica.com</p>
+<footer class="footer" id="contacto">
+    <div class="container">
+        <div class="footer-content">
+            <div class="footer-section">
+                <div class="footer-logo">
+                    <img src="./assets/logo-footer.png" alt="Clínica Médica" class="footer-logo-img">
+                    <div class="footer-logo-text">
+                        <h3 class="footer-logo-title">Clínica Médica</h3>
+                        <p class="footer-logo-subtitle">Medicina de la salud</p>
+                    </div>
+                </div>
+                <p class="footer-description">
+                    Brindamos atención médica de calidad con profesionales especializados y tecnología de vanguardia
+                    para el cuidado integral de tu salud y familia.
+                </p>
+            </div>
+
+            <div class="footer-section">
+                <h4 class="footer-title">Especialidades</h4>
+                <ul class="footer-list">
+                    <li><a href="./index.html#profesionales" class="footer-link">Cardiología</a></li>
+                    <li><a href="./index.html#profesionales" class="footer-link">Traumatología</a></li>
+                    <li><a href="./index.html#profesionales" class="footer-link">Neurología</a></li>
+                    <li><a href="./index.html#profesionales" class="footer-link">Oftalmología</a></li>
+                    <li><a href="./index.html#profesionales" class="footer-link">Pediatría</a></li>
+                    <li><a href="./index.html#profesionales" class="footer-link">Medicina Familiar</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-section">
+                <h4 class="footer-title">Enlaces</h4>
+                <ul class="footer-list">
+                    <li><a href="./index.html#inicio" class="footer-link">Inicio</a></li>
+                    <li><a href="./index.html#servicios" class="footer-link">Servicios</a></li>
+                    <li><a href="./profesionales.html" class="footer-link">Profesionales</a></li>
+                    <li><a href="./institucional.html" class="footer-link">Nosotros</a></li>
+                    <li><a href="./contacto.html" class="footer-link">Contacto</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-section">
+                <h4 class="footer-title">Contacto</h4>
+                <div class="footer-contact">
+                    <p class="footer-contact-item"><i class="fa-solid fa-location-dot"></i> Av. Corrientes 0000,
+                        CABA</p>
+                    <p class="footer-contact-item"><i class="fa-solid fa-phone"></i> +54 11 1234-5678</p>
+                    <p class="footer-contact-item"><i class="fa-solid fa-envelope"></i> info@clinicamedica.com.ar
+                    </p>
+                </div>
+            </div>
         </div>
-        <div>
-            <h6>Enlace</h6>
-            <ul>
-                <li><a href="./index.html#inicio">Inicio</a></li>
-                <li><a href="./institucional.html">Nosotros</a></li>
-                <li><a href="./contacto.html">Contacto</a></li>
-            </ul>
-        </div>
-        <div>
-            <p> 2025 Clinica Medica. Todos los derechos reservados </p>
+
+        <div class="footer-bottom">
+            <p class="footer-copyright">© 2024 Clínica Médica. Todos los derechos reservados.</p>
         </div>
     </div>
 </footer>
