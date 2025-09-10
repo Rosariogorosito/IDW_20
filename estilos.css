@@ -13,13 +13,6 @@ body {
   line-height: 1.6;
 }
 
-/* Contenedor central */
-.container {
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 0 20px;
-}
-
 /* heder y navegación */
 header {
   background-color: #ffffff;
