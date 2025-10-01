@@ -7,42 +7,48 @@
     <title>Cartilla de profesionales Clínica médica</title>
     <meta name="description"
         content="Atención médica profesional con especialistas altamente calificados. Reserva tu turno de forma rápida y sencilla en nuestro sistema online.">
-    <link rel="stylesheet" href="styles.css">
     <link rel="icon" href="./assets/logo-header.png">
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/2a7e1c6c6b.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&family=Questrial&family=Quicksand:wght@300..700&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
 </head>
 
 <body>
-
-    <header class="header">
+    <nav class="navbar navbar-expand-lg bg-white shadow-sm sticky-top">
         <div class="container">
-            <div class="header-content">
-                <div class="header-logo">
-                    <img src="./assets/logo-header.png" alt="logo clinica" class="header-logo-img">
-                    <div class="header-logo-text">
-                        <h1 class="header-logo-title">Clínica Médica</h1>
-                        <p class="header-logo-subtitle">Medicina de la salud</p>
-                    </div>
+            <a class="navbar-brand d-flex align-items-center" href="index.html">
+                <img src="./assets/logo-header.png" alt="logo clinica" class="rounded me-2" id="img-logo-nav">
+                <div>
+                    <h1 class="h5 mb-0 fw-bold text-dark">Clínica Médica</h1>
+                    <small class="text-muted">Medicina de la salud</small>
                 </div>
+            </a>
 
-                <nav class="header-nav">
-                    <ul class="nav-list">
-                        <li class="nav-item"><a href="./index.html#inicio" class="nav-link nav-link--active">Inicio</a>
-                        </li>
-                        <li class="nav-item"><a href="./index.html#servicios" class="nav-link">Servicios</a></li>
-                        <li class="nav-item"><a href="#profesionales" class="nav-link">Profesionales</a></li>
-                        <li class="nav-item"><a href="./institucional.html" class="nav-link">Nosotros</a></li>
-                        <li class="nav-item"><a href="./contacto.html" class="nav-link">Contacto</a></li>
-                    </ul>
-                </nav>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menuNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
 
-                <a href="./contacto.html" class="btn btn--primary header-cta">Reservar Turno</a>
+            <div class="collapse navbar-collapse" id="menuNav">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                    <li class="nav-item"><a class="nav-link active" href="index.html">Inicio</a></li>
+                    <li class="nav-item"><a class="nav-link" href="index.html#servicios">Servicios</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#profesionales">Profesionales</a></li>
+                    <li class="nav-item"><a class="nav-link" href="institucional.html">Nosotros</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contacto.html">Contacto</a></li>
+                </ul>
+                <a href="contacto.html" class="btn btn-turno ms-lg-3">Reservar Turno</a>
             </div>
         </div>
-    </header>
+    </nav>
 
-    <section class="profesionales" id="profesionales">
+    <section class="profesionales py-5" id="profesionales">
         <div class="container">
-            <div class="section-header">
+            <div class="text-center mb-5">
                 <h2 class="section-title">Nuestros Profesionales</h2>
                 <p class="section-description">
                     Contamos con un equipo de médicos altamente calificados y certificados,
@@ -50,531 +56,547 @@
                 </p>
             </div>
 
-            <div class="profesionales-grid">
-                <article class="doctor-card">
-                    <div>
+            <div class="row g-4">
+                <div class="col-lg-4 col-md-6">
+                    <div class="doctor-card position-relative">
                         <div class="doctor-card-badge"><i class="fa-solid fa-medal"></i></div>
-                    </div>
-                    <div class="doctor-card-info">
-                        <img src="./assets/humberto-chavez-FVh_yqLR9eA-unsplash.jpg" alt="Dra. María González"
-                            class="doctor-card-img">
-                        <h3 class="doctor-card-name">Dra. María González</h3>
-                        <p class="doctor-card-specialty">Cardiología</p>
-                        <p class="doctor-card-credentials">Matricula: MN 12345</p>
-                        <p class="doctor-card-experience">$22.000</p>
-                        <p class="doctor-card-description">
-                            Obras sociales: OSDE, Swiss Medical, Medicus, Galeno, Omint.
-                        </p>
-                        <p class="doctor-card-additional">
-                            Especialista en cardiología con más de 15 años de
-                            experiencia en diagnósticos y tratamientos cardiovasculares.
-                        </p>
-                        <a href="./contacto.html" class="btn btn--outline doctor-card-btn">Solicitar Turno </a>
-                    </div>
-                </article>
-
-                <article class="doctor-card">
-                    <div>
-                        <div class="doctor-card-badge"><i class="fa-solid fa-medal"></i></div>
-                    </div>
-                    <div class="doctor-card-info">
-                        <img src="./assets/bruno-rodrigues-279xIHymPYY-unsplash.jpg" alt="Dra. María González"
-                            class="doctor-card-img">
-                        <h3 class="doctor-card-name">Dr. Bruno Rodríguez</h3>
-                        <p class="doctor-card-specialty">Traumatología</p>
-                        <p class="doctor-card-credentials">Matricula: MN 12356</p>
-                        <p class="doctor-card-experience">$20.000</p>
-                        <p class="doctor-card-description">
-                            Obras sociales: OSDE,Accord, Swiss Medical, Medicus, Galeno.
-                        </p>
-                        <p class="doctor-card-additional">
-                            Especialista en traumatología con más de 10 años de experiencia en lesiones deportivas,
-                            fracturas y rehabilitación.
-                        </p>
-                        <a href="./contacto.html" class="btn btn--outline doctor-card-btn">Solicitar Turno </a>
-                    </div>
-                </article>
-
-                <article class="doctor-card">
-                    <div>
-                        <div class="doctor-card-badge"><i class="fa-solid fa-medal"></i></div>
-                    </div>
-                    <div class="doctor-card-info">
-                        <img src="./assets//tmvmnt-media-rm7rZYdl3rY-unsplash.jpg" alt="Dra. María González"
-                            class="doctor-card-img">
-                        <h3 class="doctor-card-name">Dra. Laura Fernández</h3>
-                        <p class="doctor-card-specialty">Pediatría</p>
-                        <p class="doctor-card-credentials">Matricula: MN 34567</p>
-                        <p class="doctor-card-experience">$25.000</p>
-                        <p class="doctor-card-description">
-                            Obras sociales: Swiss Medical, Medicus, Galeno, OSDE.
-                        </p>
-                        <p class="doctor-card-additional">
-                            Dermatólogo especializado en diagnóstico y tratamiento de enfermedades de la piel,
-                            cabello y uñas, con 8 años de experiencia
-                        </p>
-                        <a href="./contacto.html" class="btn btn--outline doctor-card-btn">Solicitar Turno </a>
-                    </div>
-                </article>
-
-                <article class="doctor-card">
-                    <div>
-                        <div class="doctor-card-badge"><i class="fa-solid fa-medal"></i></div>
-                    </div>
-                    <div class="doctor-card-info">
-                        <img src="./assets/pexels-tessy-agbonome-521343232-18828741.jpg" alt="Dra. María González"
-                            class="doctor-card-img">
-                        <h3 class="doctor-card-name">Dra. Carla Ubirre</h3>
-                        <p class="doctor-card-specialty">Ginecología</p>
-                        <p class="doctor-card-credentials">Matricula: MN 56789</p>
-                        <p class="doctor-card-experience">$26.000</p>
-                        <p class="doctor-card-description">
-                            Obras sociales: Medicus, Galeno, Omint, OSDE, Swiss Medical,
-                        </p>
-                        <p class="doctor-card-additional">
-                            Ginecóloga con más de 14 años de experiencia en control de salud femenina, planificación
-                            familiar y tratamientos integrales.
-                        </p>
-                        <a href="./contacto.html" class="btn btn--outline doctor-card-btn">Solicitar Turno </a>
-                    </div>
-                </article>
-
-                <article class="doctor-card">
-                    <div>
-                        <div class="doctor-card-badge"><i class="fa-solid fa-medal"></i></div>
-                    </div>
-                    <div class="doctor-card-info">
-                        <img src="./assets/usman-yousaf-pTrhfmj2jDA-unsplash.jpg" alt="Dra. María González"
-                            class="doctor-card-img">
-                        <h3 class="doctor-card-name">Dr. Esteban Ramirez</h3>
-                        <p class="doctor-card-specialty">Neurología</p>
-                        <p class="doctor-card-credentials">Matricula: MN 67890</p>
-                        <p class="doctor-card-experience">$23.500</p>
-                        <p class="doctor-card-description">
-                            Obras sociales: Medicus, OSDE, Swiss Medical, Accord, PCYQ
-                        </p>
-                        <p class="doctor-card-additional">
-                            Neurólogo con 15 años de experiencia en el diagnóstico y tratamiento de enfermedades del
-                            sistema nervioso.
-                        </p>
-                        <a href="./contacto.html" class="btn btn--outline doctor-card-btn">Solicitar Turno </a>
-                    </div>
-                </article>
-
-                <article class="doctor-card">
-                    <div>
-                        <div class="doctor-card-badge"><i class="fa-solid fa-medal"></i></div>
-                    </div>
-                    <div class="doctor-card-info">
-                        <img src="./assets/pexels-karolina-grabowska-5207104.jpg" alt="Dra. María González"
-                            class="doctor-card-img">
-                        <h3 class="doctor-card-name">Dra. Carla Ruíz</h3>
-                        <p class="doctor-card-specialty">Endocrinología</p>
-                        <p class="doctor-card-credentials">Matricula: MN 78901</p>
-                        <p class="doctor-card-experience">$20.000</p>
-                        <p class="doctor-card-description">
-                            Obras sociales: OSDE, Swiss Medical, Medicus, Galeno
-                        </p>
-                        <p class="doctor-card-additional">
-                            Especialista en endocrinología con más de 12 años de experiencia en el manejo de
-                            diabetes, trastornos hormonales y control metabólico.
-                        </p>
-                        <a href="./contacto.html" class="btn btn--outline doctor-card-btn">Solicitar Turno </a>
-                    </div>
-                </article>
-
-                <article class="doctor-card">
-                    <div>
-                        <div class="doctor-card-badge"><i class="fa-solid fa-medal"></i></div>
-                    </div>
-                    <div class="doctor-card-info">
-                        <img src="./assets/pexels-cristian-rojas-8460370.jpg" alt="Dra. Carolina Ruiz"
-                            class="doctor-card-img">
-                        <h3 class="doctor-card-name">Dra. Carolina Ruiz</h3>
-                        <p class="doctor-card-specialty">Endocrinología</p>
-                        <p class="doctor-card-credentials">Matricula: MN 78901</p>
-                        <p class="doctor-card-experience">$20.500</p>
-                        <p class="doctor-card-description">
-                            Obras sociales: OSDE, Swiss Medical, Medicus, Galeno
-                        </p>
-                        <p class="doctor-card-additional">
-                            Especialista en endocrinología con más de 12 años de experiencia en el manejo de diabetes,
-                            trastornos hormonales y control metabólico.
-                        </p>
-                        <a href="./contacto.html" class="btn btn--outline doctor-card-btn">Solicitar Turno </a>
-                    </div>
-                </article>
-
-                <article class="doctor-card">
-                    <div>
-                        <div class="doctor-card-badge"><i class="fa-solid fa-medal"></i></div>
-                    </div>
-                    <div class="doctor-card-info">
-                        <img src="./assets/roy-k-PukoW35U8JA-unsplash.jpg" alt="Dr. Alejandro Torres"
-                            class="doctor-card-img">
-                        <h3 class="doctor-card-name">Dr. Alejandro Torres</h3>
-                        <p class="doctor-card-specialty">Oncología</p>
-                        <p class="doctor-card-credentials">Matricula: MN 89012</p>
-                        <p class="doctor-card-experience">$25.000</p>
-                        <p class="doctor-card-description">
-                            Obras sociales: OSDE, Galeno, Swiss Medical, Omint, Accord
-                        </p>
-                        <p class="doctor-card-additional">
-                            Oncólogo con 15 años de trayectoria en diagnóstico y tratamiento integral de diferentes
-                            tipos de cáncer.
-                        </p>
-                        <a href="./contacto.html" class="btn btn--outline doctor-card-btn">Solicitar Turno </a>
-                    </div>
-                </article>
-
-                <article class="doctor-card">
-                    <div>
-                        <div class="doctor-card-badge"><i class="fa-solid fa-medal"></i></div>
-                    </div>
-                    <div class="doctor-card-info">
-                        <img src="./assets/pexels-tima-miroshnichenko-8376277.jpg" alt="Dra. Sofía Herrera"
-                            class="doctor-card-img">
-                        <h3 class="doctor-card-name">Dra. Sofía Herrera</h3>
-                        <p class="doctor-card-specialty">Oftalmología</p>
-                        <p class="doctor-card-credentials">Matricula: MN 90123</p>
-                        <p class="doctor-card-experience">$19.000</p>
-                        <p class="doctor-card-description">
-                            Obras sociales: Medicus, OSDE, Galeno, Swiss Medical
-                        </p>
-                        <p class="doctor-card-additional">
-                            Oftalmóloga con más de 10 años de experiencia en el cuidado de la visión, cirugías oculares
-                            y tratamiento de patologías oftalmológicas.
-                        </p>
-                        <a href="./contacto.html" class="btn btn--outline doctor-card-btn">Solicitar Turno </a>
-                    </div>
-                </article>
-
-                <article class="doctor-card">
-                    <div>
-                        <div class="doctor-card-badge"><i class="fa-solid fa-medal"></i></div>
-                    </div>
-                    <div class="doctor-card-info">
-                        <img src="./assets/muhammad-hicham-PYxK4LNGn6E-unsplash.jpg" alt="Dr. Nicolás Blanco"
-                            class="doctor-card-img">
-                        <h3 class="doctor-card-name">Dr. Nicolás Blanco</h3>
-                        <p class="doctor-card-specialty">Gastroenterología</p>
-                        <p class="doctor-card-credentials">Matricula: MN 01234</p>
-                        <p class="doctor-card-experience">$21.500</p>
-                        <p class="doctor-card-description">
-                            Obras sociales: OSDE, Omint, Galeno, Swiss Medical, OSPCYQ, Medicus
-                        </p>
-                        <p class="doctor-card-additional">
-                            Gastroenterólogo con 13 años de experiencia en diagnóstico y tratamiento de enfermedades
-                            digestivas, hepáticas y pancreáticas.
-                        </p>
-                        <a href="./contacto.html" class="btn btn--outline doctor-card-btn">Solicitar Turno </a>
-                    </div>
-                </article>
-
-                <article class="doctor-card">
-                    <div>
-                        <div class="doctor-card-badge"><i class="fa-solid fa-medal"></i></div>
-                    </div>
-                    <div class="doctor-card-info">
-                        <img src="./assets/pexels-shkrabaanthony-5215024.jpg" alt="Dra. Verónica Castillo"
-                            class="doctor-card-img">
-                        <h3 class="doctor-card-name">Dra. Verónica Castillo</h3>
-                        <p class="doctor-card-specialty">Psiquiatría</p>
-                        <p class="doctor-card-credentials">Matricula: MN 11223</p>
-                        <p class="doctor-card-experience">$18.500</p>
-                        <p class="doctor-card-description">
-                            Obras sociales: OSDE, Medicus, Swiss Medical, Galeno
-                        </p>
-                        <p class="doctor-card-additional">
-                            Psiquiatra con más de 11 años de experiencia en tratamiento de trastornos mentales,
-                            ansiedad, depresión y apoyo psicológico integral.
-                        </p>
-                        <a href="./contacto.html" class="btn btn--outline doctor-card-btn">Solicitar Turno </a>
-                    </div>
-                </article>
-
-                <article class="doctor-card">
-                    <div>
-                        <div class="doctor-card-badge"><i class="fa-solid fa-medal"></i></div>
-                    </div>
-                    <div class="doctor-card-info">
-                        <img src="./assets/ato-aikins-TPT4pevJEmQ-unsplash.jpg" alt="Dra. María González"
-                            class="doctor-card-img">
-                        <h3 class="doctor-card-name">Dra. María González</h3>
-                        <p class="doctor-card-specialty">Cardiología</p>
-                        <p class="doctor-card-credentials">Matricula: MN 12345</p>
-                        <p class="doctor-card-experience">$22.000</p>
-                        <p class="doctor-card-description">
-                            Obras sociales: OSDE, Swiss Medical, Medicus, Galeno, Omint
-                        </p>
-                        <p class="doctor-card-additional">
-                            Especialista en cardiología con más de 15 años de experiencia en diagnósticos y tratamientos
-                            cardiovasculares.
-                        </p>
-                        <a href="./contacto.html" class="btn btn--outline doctor-card-btn">Solicitar Turno </a>
-                    </div>
-                </article>
-
-                <article class="doctor-card">
-                    <div>
-                        <div class="doctor-card-badge"><i class="fa-solid fa-medal"></i></div>
-                    </div>
-                    <div class="doctor-card-info">
-                        <img src="./assets/nappy-WuYuMUnNRTI-unsplash.jpg" alt="Dr. Martín Sánchez"
-                            class="doctor-card-img">
-                        <h3 class="doctor-card-name">Dr. Martín Sánchez</h3>
-                        <p class="doctor-card-specialty">Neumología</p>
-                        <p class="doctor-card-credentials">Matricula: MN 22334</p>
-                        <p class="doctor-card-experience">$20.000</p>
-                        <p class="doctor-card-description">
-                            Obras sociales: OSDE, Swiss Medical, Galeno, Medicus
-                        </p>
-                        <p class="doctor-card-additional">
-                            Neumólogo con más de 10 años de experiencia en enfermedades respiratorias, asma, bronquitis
-                            y tratamiento integral del sistema respiratorio.
-                        </p>
-                        <a href="./contacto.html" class="btn btn--outline doctor-card-btn">Solicitar Turno </a>
-                    </div>
-                </article>
-
-                <article class="doctor-card">
-                    <div>
-                        <div class="doctor-card-badge"><i class="fa-solid fa-medal"></i></div>
-                    </div>
-                    <div class="doctor-card-info">
-                        <img src="./assets/fotos-H9lg5Noj660-unsplash.jpg" alt="Dra. Laura Morales"
-                            class="doctor-card-img">
-                        <h3 class="doctor-card-name">Dra. Laura Morales</h3>
-                        <p class="doctor-card-specialty">Reumatología</p>
-                        <p class="doctor-card-credentials">Matricula: MN 33445</p>
-                        <p class="doctor-card-experience">$19.500</p>
-                        <p class="doctor-card-description">
-                            Obras sociales: OSDE, Medicus, Galeno, Swiss Medical
-                        </p>
-                        <p class="doctor-card-additional">
-                            Reumatóloga con 12 años de experiencia en diagnóstico y tratamiento de artritis, artrosis y
-                            enfermedades autoinmunes.
-                        </p>
-                        <a href="./contacto.html" class="btn btn--outline doctor-card-btn">Solicitar Turno </a>
-                    </div>
-                </article>
-
-                <article class="doctor-card">
-                    <div>
-                        <div class="doctor-card-badge"><i class="fa-solid fa-medal"></i></div>
-                    </div>
-                    <div class="doctor-card-info">
-                        <img src="./assets/national-cancer-institute-kooSjlL8LnQ-unsplash.jpg" alt="Dr. Javier Gómez"
-                            class="doctor-card-img">
-                        <h3 class="doctor-card-name">Dr. Javier Gómez</h3>
-                        <p class="doctor-card-specialty">Urología</p>
-                        <p class="doctor-card-credentials">Matricula: MN 44556</p>
-                        <p class="doctor-card-experience">$21.000</p>
-                        <p class="doctor-card-description">
-                            Obras sociales: OSDE, Galeno, Medicus, Omint, SanCor Salud, Avalian
-                        </p>
-                        <p class="doctor-card-additional">
-                            Urólogo con más de 13 años de experiencia en el tratamiento de enfermedades del sistema
-                            urinario y salud masculina.
-                        </p>
-                        <a href="./contacto.html" class="btn btn--outline doctor-card-btn">Solicitar Turno </a>
-                    </div>
-                </article>
-
-                <article class="doctor-card">
-                    <div>
-                        <div class="doctor-card-badge"><i class="fa-solid fa-medal"></i></div>
-                    </div>
-                    <div class="doctor-card-info">
-                        <img src="./assets/siednji-leon-lnlSIsiSjjc-unsplash.jpg" alt="Dra. Sofía López"
-                            class="doctor-card-img">
-                        <h3 class="doctor-card-name">Dra. Sofía López</h3>
-                        <p class="doctor-card-specialty">Nutrición</p>
-                        <p class="doctor-card-credentials">Matricula: MN 55667</p>
-                        <p class="doctor-card-experience">$17.500</p>
-                        <p class="doctor-card-description">
-                            Obras sociales: OSDE, Swiss Medical, Medicus, Galeno
-                        </p>
-                        <p class="doctor-card-additional">
-                            Nutricionista con más de 10 años de experiencia en planes alimentarios personalizados y
-                            tratamiento de trastornos nutricionales.
-                        </p>
-                        <a href="./contacto.html" class="btn btn--outline doctor-card-btn">Solicitar Turno </a>
-                    </div>
-                </article>
-
-                <article class="doctor-card">
-                    <div>
-                        <div class="doctor-card-badge"><i class="fa-solid fa-medal"></i></div>
-                    </div>
-                    <div class="doctor-card-info">
-                        <img src="./assets/vaibhav-vivian-3HIroMoyre8-unsplash.jpg" alt="Dr. Matías Fernández"
-                            class="doctor-card-img">
-                        <h3 class="doctor-card-name">Dr. Matías Fernández</h3>
-                        <p class="doctor-card-specialty">Hematología</p>
-                        <p class="doctor-card-credentials">Matricula: MN 66778</p>
-                        <p class="doctor-card-experience">$22.500</p>
-                        <p class="doctor-card-description">
-                            Obras sociales: OSDE, Galeno, Medicus, Omint, Medifé, Accord Salud
-                        </p>
-                        <p class="doctor-card-additional">
-                            Hematólogo con 14 años de experiencia en diagnóstico y tratamiento de enfermedades de la
-                            sangre y médula ósea.
-                        </p>
-                        <a href="./contacto.html" class="btn btn--outline doctor-card-btn">Solicitar Turno </a>
-                    </div>
-                </article>
-
-                <article class="doctor-card">
-                    <div>
-                        <div class="doctor-card-badge"><i class="fa-solid fa-medal"></i></div>
-                    </div>
-                    <div class="doctor-card-info">
-                        <img src="./assets/eben-kassaye-Z7TAIOQgjWA-unsplash.jpg" alt="Dra. Mónica Castro"
-                            class="doctor-card-img">
-                        <h3 class="doctor-card-name">Dra. Mónica Castro</h3>
-                        <p class="doctor-card-specialty">Fisiatría</p>
-                        <p class="doctor-card-credentials">Matricula: MN 77889</p>
-                        <p class="doctor-card-experience">$18.000</p>
-                        <p class="doctor-card-description">
-                            Obras sociales: OSDE, Medicus, Galeno, Swiss Medical
-                        </p>
-                        <p class="doctor-card-additional">
-                            Fisiatra con 11 años de experiencia en rehabilitación física, manejo del dolor y
-                            recuperación post-operatoria.
-                        </p>
-                        <a href="./contacto.html" class="btn btn--outline doctor-card-btn">Solicitar Turno </a>
-                    </div>
-                </article>
-
-                <article class="doctor-card">
-                    <div>
-                        <div class="doctor-card-badge"><i class="fa-solid fa-medal"></i></div>
-                    </div>
-                    <div class="doctor-card-info">
-                        <img src="./assets/mohamad-azaam-1O8CJy1A7Wo-unsplash.jpg" alt="Dr. Andrés Ruiz"
-                            class="doctor-card-img">
-                        <h3 class="doctor-card-name">Dr. Andrés Ruiz</h3>
-                        <p class="doctor-card-specialty">Cardiología</p>
-                        <p class="doctor-card-credentials">Matricula: MN 88990</p>
-                        <p class="doctor-card-experience">$23.000</p>
-                        <p class="doctor-card-description">
-                            Obras sociales: OSDE, Swiss Medical, Medicus, Galeno
-                        </p>
-                        <p class="doctor-card-additional">
-                            Cardiólogo con 16 años de experiencia en diagnóstico y tratamiento de enfermedades
-                            cardiovasculares complejas.
-                        </p>
-                        <a href="./contacto.html" class="btn btn--outline doctor-card-btn">Solicitar Turno </a>
-                    </div>
-                </article>
-
-                <article class="doctor-card">
-                    <div>
-                        <div class="doctor-card-badge"><i class="fa-solid fa-medal"></i></div>
-                    </div>
-                    <div class="doctor-card-info">
-                        <img src="./assets/jeremy-alford-O13B7suRG4A-unsplash.jpg" alt="Dra. Luciana Martín"
-                            class="doctor-card-img">
-                        <h3 class="doctor-card-name">Dra. Luciana Martín</h3>
-                        <p class="doctor-card-specialty">Dermatología</p>
-                        <p class="doctor-card-credentials">Matricula: MN 99001</p>
-                        <p class="doctor-card-experience">$19.000</p>
-                        <p class="doctor-card-description">
-                            Obras sociales: OSDE, Medicus, Swiss Medical, Galeno
-                        </p>
-                        <p class="doctor-card-additional">
-                            Dermatóloga con 9 años de experiencia en tratamientos estéticos y enfermedades de la piel,
-                            cabello y uñas.
-                        </p>
-                        <a href="./contacto.html" class="btn btn--outline doctor-card-btn">Solicitar Turno </a>
-                    </div>
-                </article>
-
-                <article class="doctor-card">
-                    <div>
-                        <div class="doctor-card-badge"><i class="fa-solid fa-medal"></i></div>
-                    </div>
-                    <div class="doctor-card-info">
-                        <img src="./assets/dalton-ngangi-ZCztndOWdjs-unsplash.jpg" alt="Dr. Pedro Álvarez"
-                            class="doctor-card-img">
-                        <h3 class="doctor-card-name">Dr. Pedro Álvarez</h3>
-                        <p class="doctor-card-specialty">Neurocirugía</p>
-                        <p class="doctor-card-credentials">Matricula: MN 10112</p>
-                        <p class="doctor-card-experience">$26.000</p>
-                        <p class="doctor-card-description">
-                            Obras sociales: OSDE, Swiss Medical, Galeno, Medicus
-                        </p>
-                        <p class="doctor-card-additional">
-                            Neurocirujano con más de 15 años de experiencia en cirugía cerebral y de columna, manejo de
-                            traumas neurológicos y tumores.
-                        </p>
-                        <a href="./contacto.html" class="btn btn--outline doctor-card-btn">Solicitar Turno </a>
-                    </div>
-                </article>
-
-            </div>
-
-    </section>
-
-    <footer class="footer" id="contacto">
-        <div class="container">
-            <div class="footer-content">
-                <div class="footer-section">
-                    <div class="footer-logo">
-                        <img src="./assets/logo-footer.png" alt="Clínica Médica" class="footer-logo-img">
-                        <div class="footer-logo-text">
-                            <h3 class="footer-logo-title">Clínica Médica</h3>
-                            <p class="footer-logo-subtitle">Medicina de la salud</p>
+                        <div class="doctor-card-info">
+                            <img src="./assets/humberto-chavez-FVh_yqLR9eA-unsplash.jpg" alt="Dra. María González"
+                                class="doctor-card-img">
+                            <h3 class="doctor-card-name">Dra. María González</h3>
+                            <p class="doctor-card-specialty">Cardiología</p>
+                            <p class="doctor-card-credentials">Matrícula: MN 12345</p>
+                            <p class="doctor-card-experience">$22.000</p>
+                            <p class="doctor-card-description">
+                                Obras sociales: OSDE, Swiss Medical, Medicus, Galeno, Omint.
+                            </p>
+                            <p class="doctor-card-additional">
+                                Especialista en cardiología con más de 15 años de experiencia en diagnósticos y
+                                tratamientos cardiovasculares.
+                            </p>
+                            <a href="./contacto.html" class="btn doctor-card-btn">Solicitar Turno</a>
                         </div>
                     </div>
-                    <p class="footer-description">
-                        Brindamos atención médica de calidad con profesionales especializados y tecnología de vanguardia
-                        para el cuidado integral de tu salud y familia.
-                    </p>
                 </div>
 
-                <div class="footer-section">
-                    <h4 class="footer-title">Especialidades</h4>
-                    <ul class="footer-list">
-                        <li><a href="./index.html#profesionales" class="footer-link">Cardiología</a></li>
-                        <li><a href="./index.html#profesionales" class="footer-link">Traumatología</a></li>
-                        <li><a href="./index.html#profesionales" class="footer-link">Neurología</a></li>
-                        <li><a href="./index.html#profesionales" class="footer-link">Oftalmología</a></li>
-                        <li><a href="./index.html#profesionales" class="footer-link">Pediatría</a></li>
-                        <li><a href="./index.html#profesionales" class="footer-link">Medicina Familiar</a></li>
-                    </ul>
-                </div>
-
-                <div class="footer-section">
-                    <h4 class="footer-title">Enlaces</h4>
-                    <ul class="footer-list">
-                        <li><a href="index.html#inicio" class="footer-link">Inicio</a></li>
-                        <li><a href="index.html#servicios" class="footer-link">Servicios</a></li>
-                        <li><a href="#profesionales" class="footer-link">Profesionales</a></li>
-                        <li><a href="./institucional.html" class="footer-link">Nosotros</a></li>
-                        <li><a href="./contacto.html" class="footer-link">Contacto</a></li>
-                    </ul>
-                </div>
-
-                <div class="footer-section">
-                    <h4 class="footer-title">Contacto</h4>
-                    <div class="footer-contact">
-                        <p class="footer-contact-item"><i class="fa-solid fa-location-dot"></i> Av. Corrientes 0000,
-                            CABA</p>
-                        <p class="footer-contact-item"><i class="fa-solid fa-phone"></i> +54 11 1234-5678</p>
-                        <p class="footer-contact-item"><i class="fa-solid fa-envelope"></i> info@clinicamedica.com.ar
-                        </p>
+                <div class="col-lg-4 col-md-6">
+                    <div class="doctor-card position-relative">
+                        <div class="doctor-card-badge"><i class="fa-solid fa-medal"></i></div>
+                        <div class="doctor-card-info">
+                            <img src="./assets/bruno-rodrigues-279xIHymPYY-unsplash.jpg" alt="Dr. Bruno Rodríguez"
+                                class="doctor-card-img">
+                            <h3 class="doctor-card-name">Dr. Bruno Rodríguez</h3>
+                            <p class="doctor-card-specialty">Traumatología</p>
+                            <p class="doctor-card-credentials">Matrícula: MN 12356</p>
+                            <p class="doctor-card-experience">$20.000</p>
+                            <p class="doctor-card-description">
+                                Obras sociales: OSDE, Accord, Swiss Medical, Medicus, Galeno.
+                            </p>
+                            <p class="doctor-card-additional">
+                                Especialista en traumatología con más de 10 años de experiencia en lesiones deportivas,
+                                fracturas y rehabilitación.
+                            </p>
+                            <a href="./contacto.html" class="btn doctor-card-btn">Solicitar Turno</a>
+                        </div>
                     </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6">
+                    <div class="doctor-card position-relative">
+                        <div class="doctor-card-badge"><i class="fa-solid fa-medal"></i></div>
+                        <div class="doctor-card-info">
+                            <img src="./assets/tmvmnt-media-rm7rZYdl3rY-unsplash.jpg" alt="Dra. Laura Fernández"
+                                class="doctor-card-img">
+                            <h3 class="doctor-card-name">Dra. Laura Fernández</h3>
+                            <p class="doctor-card-specialty">Pediatría</p>
+                            <p class="doctor-card-credentials">Matrícula: MN 34567</p>
+                            <p class="doctor-card-experience">$25.000</p>
+                            <p class="doctor-card-description">
+                                Obras sociales: Swiss Medical, Medicus, Galeno, OSDE, Accord.
+                            </p>
+                            <p class="doctor-card-additional">
+                                Dermatólogo especializado en diagnóstico y tratamiento de enfermedades de la piel,
+                                cabello y uñas, con 8 años de experiencia.
+                            </p>
+                            <a href="./contacto.html" class="btn doctor-card-btn">Solicitar Turno</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6">
+                    <div class="doctor-card position-relative">
+                        <div class="doctor-card-badge"><i class="fa-solid fa-medal"></i></div>
+                        <div class="doctor-card-info">
+                            <img src="./assets/pexels-tessy-agbonome-521343232-18828741.jpg" alt="Dra. Carla Ubirre"
+                                class="doctor-card-img">
+                            <h3 class="doctor-card-name">Dra. Carla Ubirre</h3>
+                            <p class="doctor-card-specialty">Ginecología</p>
+                            <p class="doctor-card-credentials">Matrícula: MN 56789</p>
+                            <p class="doctor-card-experience">$26.000</p>
+                            <p class="doctor-card-description">
+                                Obras sociales: Medicus, Galeno, Omint, OSDE, Swiss Medical,
+                            </p>
+                            <p class="doctor-card-additional">
+                                Ginecóloga con más de 14 años de experiencia en control de salud femenina, planificación
+                                familiar y tratamientos integrales.
+                            </p>
+                            <a href="./contacto.html" class="btn doctor-card-btn">Solicitar Turno</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6">
+                    <div class="doctor-card position-relative">
+                        <div class="doctor-card-badge"><i class="fa-solid fa-medal"></i></div>
+                        <div class="doctor-card-info">
+                            <img src="./assets/usman-yousaf-pTrhfmj2jDA-unsplash.jpg" alt="Dr. Esteban Ramirez"
+                                class="doctor-card-img">
+                            <h3 class="doctor-card-name">Dr. Esteban Ramirez</h3>
+                            <p class="doctor-card-specialty">Neurología</p>
+                            <p class="doctor-card-credentials">Matrícula: MN 67890</p>
+                            <p class="doctor-card-experience">$23.500</p>
+                            <p class="doctor-card-description">
+                                Obras sociales: Medicus, OSDE, Swiss Medical, Accord, PCYQ
+                            </p>
+                            <p class="doctor-card-additional">
+                                Neurólogo con más de 15 años de experiencia en el diagnóstico y tratamiento de
+                                enfermedades del
+                                sistema nervioso.
+                            </p>
+                            <a href="./contacto.html" class="btn doctor-card-btn">Solicitar Turno</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6">
+                    <div class="doctor-card position-relative">
+                        <div class="doctor-card-badge"><i class="fa-solid fa-medal"></i></div>
+                        <div class="doctor-card-info">
+                            <img src="./assets/pexels-karolina-grabowska-5207104.jpg" alt="Dra. Carla Ruíz"
+                                class="doctor-card-img">
+                            <h3 class="doctor-card-name">Dra. Carla Ruíz</h3>
+                            <p class="doctor-card-specialty">Endocrinología</p>
+                            <p class="doctor-card-credentials">Matricula: MN 78901</p>
+                            <p class="doctor-card-experience">$20.000</p>
+                            <p class="doctor-card-description">
+                                Obras sociales: OSDE, Accord, Swiss Medical, Medicus, Galeno.
+                            </p>
+                            <p class="doctor-card-additional">
+                                Especialista en endocrinología con más de 12 años de experiencia en el manejo de
+                                diabetes, trastornos hormonales y control metabólico.
+                            </p>
+                            <a href="./contacto.html" class="btn doctor-card-btn">Solicitar Turno</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6">
+                    <div class="doctor-card position-relative">
+                        <div class="doctor-card-badge"><i class="fa-solid fa-medal"></i></div>
+                        <div class="doctor-card-info">
+                            <img src="./assets/pexels-cristian-rojas-8460370.jpg" alt="Dra. Carolina Ruíz"
+                                class="doctor-card-img">
+                            <h3 class="doctor-card-name">Dra. Carolina Ruiz</h3>
+                            <p class="doctor-card-specialty">Endocrinología</p>
+                            <p class="doctor-card-credentials">Matricula: MN 78941</p>
+                            <p class="doctor-card-experience">$20.500</p>
+                            <p class="doctor-card-description">
+                                Obras sociales: OSDE, Accord, Swiss Medical, Medicus, Galeno.
+                            </p>
+                            <p class="doctor-card-additional">
+                                Especialista en endocrinología con más de 15 años de experiencia en el manejo de
+                                diabetes y otras patologías.
+                            </p>
+                            <a href="./contacto.html" class="btn doctor-card-btn">Solicitar Turno</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6">
+                    <div class="doctor-card position-relative">
+                        <div class="doctor-card-badge"><i class="fa-solid fa-medal"></i></div>
+                        <div class="doctor-card-info">
+                            <img src="./assets/roy-k-PukoW35U8JA-unsplash.jpg" alt="Dr. Alejandro Torres"
+                                class="doctor-card-img">
+                            <h3 class="doctor-card-name">Dr. Alejandro Torres</h3>
+                            <p class="doctor-card-specialty">Oncología</p>
+                            <p class="doctor-card-credentials">Matricula: MN 89012</p>
+                            <p class="doctor-card-experience">$25.000</p>
+                            <p class="doctor-card-description">
+                                Obras sociales: OSDE, Galeno, Swiss Medical, Omint, Accord
+                            </p>
+                            <p class="doctor-card-additional">
+                                Oncólogo con 15 años de trayectoria en diagnóstico y tratamiento integral de diferentes
+                                tipos de cáncer.
+                            </p>
+                            <a href="./contacto.html" class="btn doctor-card-btn">Solicitar Turno</a>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="col-lg-4 col-md-6">
+                    <div class="doctor-card position-relative">
+                        <div class="doctor-card-badge"><i class="fa-solid fa-medal"></i></div>
+                        <div class="doctor-card-info">
+                            <img src="./assets/pexels-tima-miroshnichenko-8376277.jpg" alt="Dra. Sofia Herrera"
+                                class="doctor-card-img">
+                            <h3 class="doctor-card-name">Dra. Sofía Herrera</h3>
+                            <p class="doctor-card-specialty">Oftalmología</p>
+                            <p class="doctor-card-credentials">Matricula: MN 90123</p>
+                            <p class="doctor-card-experience">$19.000</p>
+                            <p class="doctor-card-description">
+                                Obras sociales: Medicus, OSDE, Galeno, Swiss Medical
+                            </p>
+                            <p class="doctor-card-additional">
+                                Oftalmóloga con más de 10 años de experiencia en el cuidado de la visión, cirugías
+                                oculares
+                                y tratamiento de patologías oftalmológicas.
+                            </p>
+                            <a href="./contacto.html" class="btn doctor-card-btn">Solicitar Turno</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6">
+                    <div class="doctor-card position-relative">
+                        <div class="doctor-card-badge"><i class="fa-solid fa-medal"></i></div>
+                        <div class="doctor-card-info">
+                            <img src="./assets/muhammad-hicham-PYxK4LNGn6E-unsplash.jpg" alt="Dr. Nicolás Blanco"
+                                class="doctor-card-img">
+                            <h3 class="doctor-card-name">Dr. Nicolás Blanco</h3>
+                            <p class="doctor-card-specialty">Gastroenterología</p>
+                            <p class="doctor-card-credentials">Matricula: MN 60123</p>
+                            <p class="doctor-card-experience">$21.500</p>
+                            <p class="doctor-card-description">
+                                Obras sociales: OSDE, Omint, Galeno, Swiss Medical, OSPCYQ, Medicus
+                            </p>
+                            <p class="doctor-card-additional">
+                                Gastroenterólogo especializado en diagnóstico y tratamiento de enfermedades
+                                digestivas, hepáticas y pancreáticas.
+                            </p>
+                            <a href="./contacto.html" class="btn doctor-card-btn">Solicitar Turno</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6">
+                    <div class="doctor-card position-relative">
+                        <div class="doctor-card-badge"><i class="fa-solid fa-medal"></i></div>
+                        <div class="doctor-card-info">
+                            <img src="./assets/pexels-shkrabaanthony-5215024.jpg" alt="Dra. Verónica Castillo"
+                                class="doctor-card-img">
+                            <h3 class="doctor-card-name">Dra. Verónica Castillo</h3>
+                            <p class="doctor-card-specialty">Psiquiatría</p>
+                            <p class="doctor-card-credentials">Matricula: MN 11223</p>
+                            <p class="doctor-card-experience">$18.500</p>
+                            <p class="doctor-card-description">
+                                Obras sociales: OSDE, Medicus, Swiss Medical, Galeno
+                            </p>
+                            <p class="doctor-card-additional">
+                                Psiquiatra con 11 años de experiencia en tratamiento de trastornos mentales,
+                                ansiedad, depresión y apoyo psicológico integral.
+                            </p>
+                            <a href="./contacto.html" class="btn doctor-card-btn">Solicitar Turno</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6">
+                    <div class="doctor-card position-relative">
+                        <div class="doctor-card-badge"><i class="fa-solid fa-medal"></i></div>
+                        <div class="doctor-card-info">
+                            <img src="./assets/ato-aikins-TPT4pevJEmQ-unsplash.jpg" alt="Dra. María González"
+                                class="doctor-card-img">
+                            <h3 class="doctor-card-name">Dra. María González</h3>
+                            <p class="doctor-card-specialty">Cardiología</p>
+                            <p class="doctor-card-credentials">Matricula: MN 91723</p>
+                            <p class="doctor-card-experience">$22.000</p>
+                            <p class="doctor-card-description">
+                                Obras sociales: OSDE, Swiss Medical, Medicus, Galeno, Omint
+                            </p>
+                            <p class="doctor-card-additional">
+                                Especialista en cardiología con más de 15 años de experiencia en diagnósticos y
+                                tratamientos
+                                cardiovasculares.
+                            </p>
+                            <a href="./contacto.html" class="btn doctor-card-btn">Solicitar Turno</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6">
+                    <div class="doctor-card position-relative">
+                        <div class="doctor-card-badge"><i class="fa-solid fa-medal"></i></div>
+                        <div class="doctor-card-info">
+                            <img src="./assets/nappy-WuYuMUnNRTI-unsplash.jpg" alt="Dr. Martín Sánchez"
+                                class="doctor-card-img">
+                            <h3 class="doctor-card-name">Dr. Martín Sánchez</h3>
+                            <p class="doctor-card-specialty">Neumología</p>
+                            <p class="doctor-card-credentials">Matricula: MN 24783</p>
+                            <p class="doctor-card-experience">$20.000</p>
+                            <p class="doctor-card-description">
+                                Obras sociales: OSDE, Swiss Medical, Omint, PCYQ, Accord
+                            </p>
+                            <p class="doctor-card-additional">
+                                Neumólogo con 10 años de experiencia en enfermedades respiratorias, asma,
+                                bronquitis
+                                y tratamiento integral del sistema respiratorio.
+                            </p>
+                            <a href="./contacto.html" class="btn doctor-card-btn">Solicitar Turno</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6">
+                    <div class="doctor-card position-relative">
+                        <div class="doctor-card-badge"><i class="fa-solid fa-medal"></i></div>
+                        <div class="doctor-card-info">
+                            <img src="./assets/fotos-H9lg5Noj660-unsplash.jpg" alt="Dra. Laura Morales"
+                                class="doctor-card-img">
+                            <h3 class="doctor-card-name">Dra. Laura Morales</h3>
+                            <p class="doctor-card-specialty">Reumatología</p>
+                            <p class="doctor-card-credentials">Matricula: MN 33756</p>
+                            <p class="doctor-card-experience">$19.500</p>
+                            <p class="doctor-card-description">
+                                Obras sociales: Swiss Medical, Medicus, OSDE, Galeno
+                            </p>
+                            <p class="doctor-card-additional">
+                                Reumatóloga con 12 años de experiencia en diagnóstico y tratamiento de artritis,
+                                artrosis y
+                                enfermedades autoinmunes.
+                            </p>
+                            <a href="./contacto.html" class="btn doctor-card-btn">Solicitar Turno</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6">
+                    <div class="doctor-card position-relative">
+                        <div class="doctor-card-badge"><i class="fa-solid fa-medal"></i></div>
+                        <div class="doctor-card-info">
+                            <img src="./assets/national-cancer-institute-kooSjlL8LnQ-unsplash.jpg"
+                                alt="Dr. Javier Gómez" class="doctor-card-img">
+                            <h3 class="doctor-card-name">Dr. Javier Gómez</h3>
+                            <p class="doctor-card-specialty">Urología</p>
+                            <p class="doctor-card-credentials">Matricula: MN 44753</p>
+                            <p class="doctor-card-experience">$21.000</p>
+                            <p class="doctor-card-description">
+                                Obras sociales: Galeno, Swiss Medical, Medicus, OSDE, Galeno
+                            </p>
+                            <p class="doctor-card-additional">
+                                Urólogo con más de 13 años de experiencia en el tratamiento de enfermedades del sistema
+                                urinario y salud masculina.
+                            </p>
+                            <a href="./contacto.html" class="btn doctor-card-btn">Solicitar Turno</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6">
+                    <div class="doctor-card position-relative">
+                        <div class="doctor-card-badge"><i class="fa-solid fa-medal"></i></div>
+                        <div class="doctor-card-info">
+                            <img src="./assets/siednji-leon-lnlSIsiSjjc-unsplash.jpg" alt="Dra. Sofia Lopez"
+                                class="doctor-card-img">
+                            <h3 class="doctor-card-name">Dra. Sofía López</h3>
+                            <p class="doctor-card-specialty">Nutrición</p>
+                            <p class="doctor-card-credentials">Matricula: MN 75723</p>
+                            <p class="doctor-card-experience">$17.500</p>
+                            <p class="doctor-card-description">
+                                Obras sociales: OSDE, Swiss Medical, Medicus, Galeno
+                            </p>
+                            <p class="doctor-card-additional">
+                                Nutricionista con 10 años de experiencia en planes alimentarios personalizados y
+                                tratamiento de trastornos nutricionales.
+                            </p>
+                            <a href="./contacto.html" class="btn doctor-card-btn">Solicitar Turno</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6">
+                    <div class="doctor-card position-relative">
+                        <div class="doctor-card-badge"><i class="fa-solid fa-medal"></i></div>
+                        <div class="doctor-card-info">
+                            <img src="./assets/vaibhav-vivian-3HIroMoyre8-unsplash.jpg" alt="Dr. Matías Fernández"
+                                class="doctor-card-img">
+                            <h3 class="doctor-card-name">Dr. Matías Fernández</h3>
+                            <p class="doctor-card-specialty">Hematología</p>
+                            <p class="doctor-card-credentials">Matricula: MN 61793</p>
+                            <p class="doctor-card-experience">$22.500</p>
+                            <p class="doctor-card-description">
+                                Obras sociales: OSDE, Swiss Medical, Accord Medicus, Galeno
+                            </p>
+                            <p class="doctor-card-additional">
+                                Hematólogo con 14 años de experiencia en diagnóstico y tratamiento de enfermedades de la
+                                sangre y médula ósea.
+                            </p>
+                            <a href="./contacto.html" class="btn doctor-card-btn">Solicitar Turno</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6">
+                    <div class="doctor-card position-relative">
+                        <div class="doctor-card-badge"><i class="fa-solid fa-medal"></i></div>
+                        <div class="doctor-card-info">
+                            <img src="./assets/eben-kassaye-Z7TAIOQgjWA-unsplash.jpg" alt="Dra. Mónica Castro"
+                                class="doctor-card-img">
+                            <h3 class="doctor-card-name">Dra. Mónica Castro</h3>
+                            <p class="doctor-card-specialty">Fisiatría</p>
+                            <p class="doctor-card-credentials">Matricula: MN 77889</p>
+                            <p class="doctor-card-experience">$18.000</p>
+                            <p class="doctor-card-description">
+                                Obras sociales: Accord, OSDE, Swiss Medical, Accord, Medicus, Galeno
+                            </p>
+                            <p class="doctor-card-additional">
+                                Fisiatra con 11 años de experiencia en rehabilitación física, manejo del dolor y
+                                recuperación post-operatoria.
+                            </p>
+                            <a href="./contacto.html" class="btn doctor-card-btn">Solicitar Turno</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6">
+                    <div class="doctor-card position-relative">
+                        <div class="doctor-card-badge"><i class="fa-solid fa-medal"></i></div>
+                        <div class="doctor-card-info">
+                            <img src="./assets/mohamad-azaam-1O8CJy1A7Wo-unsplash.jpg" alt="Dr. Andrés Ruiz"
+                                class="doctor-card-img">
+                            <h3 class="doctor-card-name">Dr. Andrés Ruiz</h3>
+                            <p class="doctor-card-specialty">Cardioloía</p>
+                            <p class="doctor-card-credentials">Matricula: MN 88753</p>
+                            <p class="doctor-card-experience">$23.000</p>
+                            <p class="doctor-card-description">
+                                Obras sociales: Galeno, Swiss Medical, Accord, OSDE, Accord, Medicus,
+                            </p>
+                            <p class="doctor-card-additional">
+                                Cardiólogo con 16 años de experiencia en diagnóstico y tratamiento de enfermedades
+                                cardiovasculares complejas.
+                            </p>
+                            <a href="./contacto.html" class="btn doctor-card-btn">Solicitar Turno</a>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="col-lg-4 col-md-6">
+                    <div class="doctor-card position-relative">
+                        <div class="doctor-card-badge"><i class="fa-solid fa-medal"></i></div>
+                        <div class="doctor-card-info">
+                            <img src="./assets/jeremy-alford-O13B7suRG4A-unsplash.jpg" alt="Dra. Luciana Martín"
+                                class="doctor-card-img">
+                            <h3 class="doctor-card-name">Dra. Luciana Martín</h3>
+                            <p class="doctor-card-specialty">Dermatología</p>
+                            <p class="doctor-card-credentials">Matricula: MN 93153</p>
+                            <p class="doctor-card-experience">$19.000</p>
+                            <p class="doctor-card-description">
+                                Obras sociales: Accord, Galeno, Swiss Medical, OSDE, Medicus,
+                            </p>
+                            <p class="doctor-card-additional">
+                                Dermatóloga con 9 años de experiencia en tratamientos estéticos y enfermedades de la
+                                piel,
+                                cabello y uñas.
+                            </p>
+                            <a href="./contacto.html" class="btn doctor-card-btn">Solicitar Turno</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6">
+                    <div class="doctor-card position-relative">
+                        <div class="doctor-card-badge"><i class="fa-solid fa-medal"></i></div>
+                        <div class="doctor-card-info">
+                            <img src="./assets/dalton-ngangi-ZCztndOWdjs-unsplash.jpg" alt="Dr. Pedro Álvarez"
+                                class="doctor-card-img">
+                            <h3 class="doctor-card-name">Dr. Pedro Álvarez</h3>
+                            <p class="doctor-card-specialty">Neurología</p>
+                            <p class="doctor-card-credentials">Matricula: MN 14193</p>
+                            <p class="doctor-card-experience">$26.000</p>
+                            <p class="doctor-card-description">
+                                Obras sociales: OSDE, Accord, Galeno, Swiss Medical, Medicus
+                            </p>
+                            <p class="doctor-card-additional">
+                                Neurocirujano con más de 15 años de experiencia en cirugía cerebral y de columna, manejo
+                                de
+                                traumas neurológicos y tumores.
+                            </p>
+                            <a href="./contacto.html" class="btn doctor-card-btn">Solicitar Turno</a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="btn-profesionales">
+                <a href="contacto.html" class="btn btn-primary" id="btn-mas-profesionales">Quiero solicitar un turno</a>
+            </div>
+        </div>
+    </section>
+
+    <footer class="text-white pt-5">
+        <div class="container">
+            <div class="row g-4 mb-4">
+                <div class="col-md-4">
+                    <div class="d-flex align-items-center mb-3">
+                        <img src="./assets/logo-footer.png" alt="logo" id="img-logo-footer" class="me-2 rounded">
+                        <div>
+                            <h5 class="mb-0">Clínica Médica</h5>
+                            <small class="text-white">Medicina de la salud</small>
+                        </div>
+                    </div>
+                    <p class="text-white">Brindamos atención médica de calidad con profesionales especializados y
+                        tecnología de vanguardia para el cuidado integral de tu salud y familia.</p>
+                </div>
+                <div class="col-md-2">
+                    <h6 class="fw-bold mb-3">Especialidades</h6>
+                    <ul class="list-unstyled">
+                        <li class="mb-2"><a href="#servicios" class="text-white text-decoration-none">Cardiología</a>
+                        </li>
+                        <li class="mb-2"><a href="#servicios" class="text-white text-decoration-none">Traumatología</a>
+                        </li>
+                        <li class="mb-2"><a href="#servicios" class="text-white text-decoration-none">Neurología</a>
+                        </li>
+                        <li class="mb-2"><a href="#servicios" class="text-white text-decoration-none">Oftalmología</a>
+                        </li>
+                        <li class="mb-2"><a href="#servicios" class="text-white text-decoration-none">Pediatría</a></li>
+                        <li class="mb-2"><a href="#servicios" class="text-white text-decoration-none">Medicina
+                                Familiar</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-md-2">
+                    <h6 class="fw-bold mb-3">Enlaces</h6>
+                    <ul class="list-unstyled">
+                        <li class="mb-2"><a href="index.html" class="text-white text-decoration-none">Inicio</a></li>
+                        <li class="mb-2"><a href="index.html#servicios" class="text-white text-decoration-none">Servicios</a></li>
+                        <li class="mb-2"><a href="#profesionales" class="text-white text-decoration-none">Profesionales</a></li>
+                        <li class="mb-2"><a href="institucional.html" class="text-white text-decoration-none">Nosotros</a></li>
+                        <li class="mb-2"><a href="contacto.html" class="text-white text-decoration-none">Contacto</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-md-3">
+                    <h6 class="fw-bold mb-3">Contacto</h6>
+                    <p class="text-white mb-1"><i class="fa-solid fa-location-dot text-white me-2 mb-2"></i> Calle Falsa
+                        123, Ciudad</p>
+                    <p class="text-white mb-1"><i class="fa-solid fa-phone text-white me-2 mb-2"></i> +54 11 1234-5678
+                    </p>
+                    <p class="text-white"><i class="fa-solid fa-envelope text-white me-2 mb-2"></i> contacto@clinica.com
+                    </p>
                 </div>
             </div>
 
-            <div class="footer-bottom">
-                <p class="footer-copyright">© 2024 Clínica Médica. Todos los derechos reservados.</p>
+            <div class="border-top border-secondary pt-3 text-center pb-3" id="decoration-footer">
+                <small class="text-white-50" id="copy-footer">&copy; 2025 Clínica Médica. Todos los derechos
+                    reservados.</small>
             </div>
         </div>
     </footer>
 
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
     <script src="https://kit.fontawesome.com/3e593f07e0.js" crossorigin="anonymous"></script>
 </body>
 

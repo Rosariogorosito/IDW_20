@@ -7,235 +7,263 @@
     <title>Clínica Médica - Tu salud, nuestra prioridad</title>
     <meta name="description"
         content="Atención médica profesional con especialistas altamente calificados. Reserva tu turno de forma rápida y sencilla en nuestro sistema online.">
-    <link rel="stylesheet" href="styles.css">
     <link rel="icon" href="./assets/logo-header.png">
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/2a7e1c6c6b.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&family=Questrial&family=Quicksand:wght@300..700&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
 </head>
 
 <body>
-    <header class="header">
+    <nav class="navbar navbar-expand-lg bg-white shadow-sm sticky-top">
         <div class="container">
-            <div class="header-content">
-                <div class="header-logo">
-                    <img src="./assets/logo-header.png" alt="logo clinica" class="header-logo-img">
-                    <div class="header-logo-text">
-                        <h1 class="header-logo-title">Clínica Médica</h1>
-                        <p class="header-logo-subtitle">Medicina de la salud</p>
-                    </div>
+            <a class="navbar-brand d-flex align-items-center" href="index.html">
+                <img src="./assets/logo-header.png" alt="logo clinica" class="rounded me-2" id="img-logo-nav">
+                <div>
+                    <h1 class="h5 mb-0 fw-bold text-dark">Clínica Médica</h1>
+                    <small class="text-muted">Medicina de la salud</small>
                 </div>
+            </a>
 
-                <nav class="header-nav">
-                    <ul class="nav-list">
-                        <li class="nav-item"><a href="#inicio" class="nav-link nav-link--active">Inicio</a></li>
-                        <li class="nav-item"><a href="#servicios" class="nav-link">Servicios</a></li>
-                        <li class="nav-item"><a href="./profesionales.html" class="nav-link">Profesionales</a></li>
-                        <li class="nav-item"><a href="./institucional.html" class="nav-link">Nosotros</a></li>
-                        <li class="nav-item"><a href="./contacto.html" class="nav-link">Contacto</a></li>
-                    </ul>
-                </nav>
-                <a href="./contacto.html" class="btn btn--primary header-cta">Reservar Turno</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menuNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="menuNav">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                    <li class="nav-item"><a class="nav-link active" href="#inicio">Inicio</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#servicios">Servicios</a></li>
+                    <li class="nav-item"><a class="nav-link" href="profesionales.html">Profesionales</a></li>
+                    <li class="nav-item"><a class="nav-link" href="institucional.html">Nosotros</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contacto.html">Contacto</a></li>
+                </ul>
+                <a href="contacto.html" class="btn btn-turno ms-lg-3">Reservar Turno</a>
             </div>
         </div>
-    </header>
+    </nav>
 
-    <main class="main">
-        <section class="hero" id="inicio">
-            <div class="container">
-                <div class="hero-content">
-                    <div class="hero-text">
-                        <h2 class="hero-title">Tu salud, <span class="hero-title--highlight">nuestra prioridad</span>
-                        </h2>
-                        <p class="hero-description">
-                            Atención médica profesional con especialistas altamente calificados.
-                            Reserva tu turno de forma rápida y sencilla en nuestro sistema online.
-                        </p>
-
-                        <div class="hero-actions">
-                            <a href="./contacto.html" class="btn btn--primary">Reservar Turno</a>
-                            <a href="#servicios" class="btn btn--secondary">Ver Especialidades</a>
+    <section id="inicio" class="py-5 bg-light">
+        <div class="container">
+            <div class="row align-items-center g-5">
+                <div class="col-lg-6">
+                    <h2 class="display-5 fw-bold text-dark">Tu salud, <span class="text-primary" id="prioridad">nuestra
+                            prioridad</span></h2>
+                    <p class="lead text-secondary my-4">Atención médica profesional con especialistas altamente
+                        calificados. Reserva tu turno de forma rápida y sencilla en nuestro sistema online.</p>
+                    <div class="d-flex gap-3 mb-4">
+                        <a href="./contacto.html" class="btn btn-primary">Reservar Turno</a>
+                        <a href="#servicios" class="btn btn-outline-primary">Ver Especialidades</a>
+                    </div>
+                    <div class="row g-4" id="banner-items">
+                        <div class="col-md-4">
+                            <div class="d-flex align-items-center">
+                                <div class="bg-primary text-white rounded me-2" id="content-banner-items">
+                                    <i id="icons-banner" class="fa-solid fa-users fa-lg "></i>
+                                </div>
+                                <div>
+                                    <h6 class="fw-bold" id="title-banner-items">Profesionales</h6>
+                                    <small class="text-muted">Médicos especialistas</small>
+                                </div>
+                            </div>
                         </div>
-
-                        <div class="hero-features">
-                            <div class="feature">
-                                <div class="feature-icon"><i class="fa-solid fa-users"></i></div>
-                                <div class="feature-text">
-                                    <h3 class="feature-title">Profesionales</h3>
-                                    <p class="feature-description">Médicos especialistas</p>
+                        <div class="col-md-4">
+                            <div class="d-flex align-items-center">
+                                <div class="bg-primary text-white rounded me-2" id="content-banner-items">
+                                    <i id="icons-banner" class="fa-solid fa-hospital fa-lg"></i>
+                                </div>
+                                <div>
+                                    <h6 class="fw-bold" id="title-banner-items">Atención</h6>
+                                    <small class="text-muted">Servicio de calidad</small>
                                 </div>
                             </div>
-                            <div class="feature">
-                                <div class="feature-icon"><i class="fa-solid fa-hospital"></i></div>
-                                <div class="feature-text">
-                                    <h3 class="feature-title">Atención</h3>
-                                    <p class="feature-description">Servicio de calidad</p>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="d-flex align-items-center">
+                                <div class="bg-primary text-white rounded me-2" id="content-banner-items">
+                                    <i id="icons-banner" class="fa-solid fa-laptop-medical fa-lg"></i>
                                 </div>
-                            </div>
-                            <div class="feature">
-                                <div class="feature-icon"><i class="fa-solid fa-laptop-medical"></i></div>
-                                <div class="feature-text">
-                                    <h3 class="feature-title">Turnos Online</h3>
-                                    <p class="feature-description">Reserva fácil y rápida</p>
+                                <div>
+                                    <h6 class="fw-bold" id="title-banner-items">Online</h6>
+                                    <small class="text-muted">Turnos al instante</small>
                                 </div>
                             </div>
                         </div>
                     </div>
+                </div>
+                <div class="col-lg-6">
+                    <img src="./assets/GettyImages1468497276diabetescareteam.jpg" alt="Equipo médico profesional"
+                        class="img-fluid rounded shadow">
+                </div>
+            </div>
+        </div>
+    </section>
 
-                    <div class="hero-image">
-                        <img src="./assets/GettyImages1468497276diabetescareteam.jpg"
-                            alt="Equipo médico profesional de la clínica" class="hero-img">
+    <section id="servicios" class="py-5 bg-light">
+        <div class="container text-center">
+            <h2 class="fw-bold mb-3">Nuestras Especialidades</h2>
+            <p class="text-muted mb-5">Contamos con un equipo multidisciplinario de especialistas altamente calificados
+                para brindarle la mejor atención médica integral.</p>
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <div class="card h-100 shadow-sm text-center p-4">
+                        <div class="bg-primary text-white rounded-circle mx-auto d-flex align-items-center justify-content-center mb-3"
+                            style="width:80px;height:80px;">
+                            <i class="fa-solid fa-heart-pulse fa-2x"></i>
+                        </div>
+                        <h5 class="fw-bold">Cardiología</h5>
+                        <p class="text-muted">Diagnóstico y tratamiento de enfermedades cardiovasculares con tecnología
+                            de vanguardia.</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card h-100 shadow-sm text-center p-4">
+                        <div class="bg-primary text-white rounded-circle mx-auto d-flex align-items-center justify-content-center mb-3"
+                            style="width:80px;height:80px;">
+                            <i class="fa-solid fa-brain fa-2x"></i>
+                        </div>
+                        <h5 class="fw-bold">Neurología</h5>
+                        <p class="text-muted">Especialistas en trastornos del sistema nervioso y tratamientos
+                            neurológicos.</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card h-100 shadow-sm text-center p-4">
+                        <div class="bg-primary text-white rounded-circle mx-auto d-flex align-items-center justify-content-center mb-3"
+                            style="width:80px;height:80px;">
+                            <i class="fa-solid fa-bone fa-2x"></i>
+                        </div>
+                        <h5 class="fw-bold">Traumatología</h5>
+                        <p class="text-muted">Tratamiento integral de lesiones óseas, articulares y del sistema
+                            musculoesquelético.
+                        </p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card h-100 shadow-sm text-center p-4">
+                        <div class="bg-primary text-white rounded-circle mx-auto d-flex align-items-center justify-content-center mb-3"
+                            style="width:80px;height:80px;">
+                            <i class="fa-solid fa-eye fa-2x"></i>
+                        </div>
+                        <h5 class="fw-bold">Oftalmología</h5>
+                        <p class="text-muted">Cuidado completo de la salud visual y tratamientos de patologías oculares.
+                        </p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card h-100 shadow-sm text-center p-4">
+                        <div class="bg-primary text-white rounded-circle mx-auto d-flex align-items-center justify-content-center mb-3"
+                            style="width:80px;height:80px;">
+                            <i class="fa-solid fa-baby fa-2x"></i>
+                        </div>
+                        <h5 class="fw-bold">Pediatría</h5>
+                        <p class="text-muted">Atención médica especializada para bebés, niños y adolescentes.</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card h-100 shadow-sm text-center p-4">
+                        <div class="bg-primary text-white rounded-circle mx-auto d-flex align-items-center justify-content-center mb-3"
+                            style="width:80px;height:80px;">
+                            <i class="fa-solid fa-user-doctor fa-2x"></i>
+                        </div>
+                        <h5 class="fw-bold">Medicina Familiar</h5>
+                        <p class="text-muted">Atención médica integral para toda la familia con enfoque preventivo y
+                            personalizado.</p>
                     </div>
                 </div>
             </div>
-        </section>
+        </div>
+    </section>
 
-        <section class="especialidades" id="servicios">
-            <div class="container">
-                <div class="section-header">
-                    <h2 class="section-title">Nuestras Especialidades</h2>
-                    <p class="section-description">
-                        Contamos con un equipo multidisciplinario de especialistas altamente calificados para brindarle
-                        la mejor atención médica integral.
-                    </p>
-                </div>
-
-                <div class="especialidades-grid">
-                    <article class="card">
-                        <div class="card-icon"><i class="fa-solid fa-heart-pulse"></i></div>
-                        <h3 class="card-title">Cardiología</h3>
-                        <p class="card-description">
-                            Diagnóstico y tratamiento de enfermedades cardiovasculares con tecnología de vanguardia.
-                        </p>
-                    </article>
-
-                    <article class="card">
-                        <div class="card-icon"><i class="fa-solid fa-brain"></i></div>
-                        <h3 class="card-title">Neurología</h3>
-                        <p class="card-description">
-                            Especialistas en trastornos del sistema nervioso y tratamientos neurológicos.
-                        </p>
-                    </article>
-
-                    <article class="card">
-                        <div class="card-icon"><i class="fa-solid fa-bone"></i></div>
-                        <h3 class="card-title">Traumatología</h3>
-                        <p class="card-description">
-                            Tratamiento integral de lesiones óseas, articulares y del sistema musculoesquelético.
-                        </p>
-                    </article>
-
-                    <article class="card">
-                        <div class="card-icon"><i class="fa-solid fa-eye"></i></div>
-                        <h3 class="card-title">Oftalmología</h3>
-                        <p class="card-description">
-                            Cuidado completo de la salud visual y tratamientos de patologías oculares.
-                        </p>
-                    </article>
-
-                    <article class="card">
-                        <div class="card-icon"><i class="fa-solid fa-baby"></i></div>
-                        <h3 class="card-title">Pediatría</h3>
-                        <p class="card-description">
-                            Atención médica especializada para bebés, niños y adolescentes.
-                        </p>
-                    </article>
-
-                    <article class="card">
-                        <div class="card-icon"><i class="fa-solid fa-user-doctor"></i></div>
-                        <h3 class="card-title">Medicina Familiar</h3>
-                        <p class="card-description">
-                            Atención médica integral para toda la familia con enfoque preventivo y personalizado.
-                        </p>
-                    </article>
-                </div>
+    <section class="profesionales py-5" id="profesionales">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h2 class="section-title">Nuestros Profesionales</h2>
+                <p class="section-description">
+                    Contamos con un equipo de médicos altamente calificados y certificados,
+                    comprometidos con brindar la mejor atención médica.
+                </p>
             </div>
-        </section>
 
-        <section class="profesionales" id="profesionales">
-            <div class="container">
-                <div class="section-header">
-                    <h2 class="section-title">Nuestros Profesionales</h2>
-                    <p class="section-description">
-                        Contamos con un equipo de médicos altamente calificados y certificados,
-                        comprometidos con brindar la mejor atención médica.
-                    </p>
-                </div>
-
-                <div class="profesionales-grid">
-                    <article class="doctor-card">
-                        <div>
-                            <div class="doctor-card-badge"><i class="fa-solid fa-medal"></i></div>
-                        </div>
+            <div class="row g-4">
+                <div class="col-lg-4 col-md-6">
+                    <div class="doctor-card position-relative">
+                        <div class="doctor-card-badge"><i class="fa-solid fa-medal"></i></div>
                         <div class="doctor-card-info">
                             <img src="./assets/humberto-chavez-FVh_yqLR9eA-unsplash.jpg" alt="Dra. María González"
                                 class="doctor-card-img">
                             <h3 class="doctor-card-name">Dra. María González</h3>
                             <p class="doctor-card-specialty">Cardiología</p>
-                            <p class="doctor-card-credentials">Matricula: MN 12345</p>
+                            <p class="doctor-card-credentials">Matrícula: MN 12345</p>
                             <p class="doctor-card-experience">$22.000</p>
                             <p class="doctor-card-description">
                                 Obras sociales: OSDE, Swiss Medical, Medicus, Galeno, Omint.
                             </p>
                             <p class="doctor-card-additional">
-                                Especialista en cardiología con más de 15 años de
-                                experiencia en diagnósticos y tratamientos cardiovasculares.
+                                Especialista en cardiología con más de 15 años de experiencia en diagnósticos y
+                                tratamientos cardiovasculares.
                             </p>
-                            <a href="./contacto.html" class="btn btn--outline doctor-card-btn">Solicitar Turno </a>
+                            <a href="./contacto.html" class="btn doctor-card-btn">Solicitar Turno</a>
                         </div>
-                    </article>
+                    </div>
+                </div>
 
-                    <article class="doctor-card">
-                        <div>
-                            <div class="doctor-card-badge"><i class="fa-solid fa-medal"></i></div>
-                        </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="doctor-card position-relative">
+                        <div class="doctor-card-badge"><i class="fa-solid fa-medal"></i></div>
                         <div class="doctor-card-info">
-                            <img src="./assets/bruno-rodrigues-279xIHymPYY-unsplash.jpg" alt="Dra. María González"
+                            <img src="./assets/bruno-rodrigues-279xIHymPYY-unsplash.jpg" alt="Dr. Bruno Rodríguez"
                                 class="doctor-card-img">
                             <h3 class="doctor-card-name">Dr. Bruno Rodríguez</h3>
                             <p class="doctor-card-specialty">Traumatología</p>
-                            <p class="doctor-card-credentials">Matricula: MN 12356</p>
+                            <p class="doctor-card-credentials">Matrícula: MN 12356</p>
                             <p class="doctor-card-experience">$20.000</p>
                             <p class="doctor-card-description">
-                                Obras sociales: OSDE,Accord, Swiss Medical, Medicus, Galeno.
+                                Obras sociales: OSDE, Accord, Swiss Medical, Medicus, Galeno.
                             </p>
                             <p class="doctor-card-additional">
                                 Especialista en traumatología con más de 10 años de experiencia en lesiones deportivas,
                                 fracturas y rehabilitación.
                             </p>
-                            <a href="./contacto.html" class="btn btn--outline doctor-card-btn">Solicitar Turno </a>
+                            <a href="./contacto.html" class="btn doctor-card-btn">Solicitar Turno</a>
                         </div>
-                    </article>
+                    </div>
+                </div>
 
-                    <article class="doctor-card">
-                        <div>
-                            <div class="doctor-card-badge"><i class="fa-solid fa-medal"></i></div>
-                        </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="doctor-card position-relative">
+                        <div class="doctor-card-badge"><i class="fa-solid fa-medal"></i></div>
                         <div class="doctor-card-info">
-                            <img src="./assets//tmvmnt-media-rm7rZYdl3rY-unsplash.jpg" alt="Dra. María González"
+                            <img src="./assets/tmvmnt-media-rm7rZYdl3rY-unsplash.jpg" alt="Dra. Laura Fernández"
                                 class="doctor-card-img">
                             <h3 class="doctor-card-name">Dra. Laura Fernández</h3>
                             <p class="doctor-card-specialty">Pediatría</p>
-                            <p class="doctor-card-credentials">Matricula: MN 34567</p>
+                            <p class="doctor-card-credentials">Matrícula: MN 34567</p>
                             <p class="doctor-card-experience">$25.000</p>
                             <p class="doctor-card-description">
-                                Obras sociales: Swiss Medical, Medicus, Galeno, OSDE.
+                                Obras sociales: Swiss Medical, Medicus, Galeno, OSDE, Accord.
                             </p>
                             <p class="doctor-card-additional">
                                 Dermatólogo especializado en diagnóstico y tratamiento de enfermedades de la piel,
-                                cabello y uñas, con 8 años de experiencia
+                                cabello y uñas, con 8 años de experiencia.
                             </p>
-                            <a href="./contacto.html" class="btn btn--outline doctor-card-btn">Solicitar Turno </a>
+                            <a href="./contacto.html" class="btn doctor-card-btn">Solicitar Turno</a>
                         </div>
-                    </article>
+                    </div>
+                </div>
 
-                    <article class="doctor-card">
-                        <div>
-                            <div class="doctor-card-badge"><i class="fa-solid fa-medal"></i></div>
-                        </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="doctor-card position-relative">
+                        <div class="doctor-card-badge"><i class="fa-solid fa-medal"></i></div>
                         <div class="doctor-card-info">
-                            <img src="./assets/pexels-tessy-agbonome-521343232-18828741.jpg" alt="Dra. María González"
+                            <img src="./assets/pexels-tessy-agbonome-521343232-18828741.jpg" alt="Dra. Carla Ubirre"
                                 class="doctor-card-img">
                             <h3 class="doctor-card-name">Dra. Carla Ubirre</h3>
                             <p class="doctor-card-specialty">Ginecología</p>
-                            <p class="doctor-card-credentials">Matricula: MN 56789</p>
+                            <p class="doctor-card-credentials">Matrícula: MN 56789</p>
                             <p class="doctor-card-experience">$26.000</p>
                             <p class="doctor-card-description">
                                 Obras sociales: Medicus, Galeno, Omint, OSDE, Swiss Medical,
@@ -244,178 +272,184 @@
                                 Ginecóloga con más de 14 años de experiencia en control de salud femenina, planificación
                                 familiar y tratamientos integrales.
                             </p>
-                            <a href="./contacto.html" class="btn btn--outline doctor-card-btn">Solicitar Turno </a>
+                            <a href="./contacto.html" class="btn doctor-card-btn">Solicitar Turno</a>
                         </div>
-                    </article>
+                    </div>
+                </div>
 
-                    <article class="doctor-card">
-                        <div>
-                            <div class="doctor-card-badge"><i class="fa-solid fa-medal"></i></div>
-                        </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="doctor-card position-relative">
+                        <div class="doctor-card-badge"><i class="fa-solid fa-medal"></i></div>
                         <div class="doctor-card-info">
-                            <img src="./assets/usman-yousaf-pTrhfmj2jDA-unsplash.jpg" alt="Dra. María González"
+                            <img src="./assets/usman-yousaf-pTrhfmj2jDA-unsplash.jpg" alt="Dr. Esteban Ramirez"
                                 class="doctor-card-img">
                             <h3 class="doctor-card-name">Dr. Esteban Ramirez</h3>
                             <p class="doctor-card-specialty">Neurología</p>
-                            <p class="doctor-card-credentials">Matricula: MN 67890</p>
+                            <p class="doctor-card-credentials">Matrícula: MN 67890</p>
                             <p class="doctor-card-experience">$23.500</p>
                             <p class="doctor-card-description">
                                 Obras sociales: Medicus, OSDE, Swiss Medical, Accord, PCYQ
                             </p>
                             <p class="doctor-card-additional">
-                                Neurólogo con 15 años de experiencia en el diagnóstico y tratamiento de enfermedades del
+                                Neurólogo con más de 15 años de experiencia en el diagnóstico y tratamiento de
+                                enfermedades del
                                 sistema nervioso.
                             </p>
-                            <a href="./contacto.html" class="btn btn--outline doctor-card-btn">Solicitar Turno </a>
+                            <a href="./contacto.html" class="btn doctor-card-btn">Solicitar Turno</a>
                         </div>
-                    </article>
+                    </div>
+                </div>
 
-                    <article class="doctor-card">
-                        <div>
-                            <div class="doctor-card-badge"><i class="fa-solid fa-medal"></i></div>
-                        </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="doctor-card position-relative">
+                        <div class="doctor-card-badge"><i class="fa-solid fa-medal"></i></div>
                         <div class="doctor-card-info">
-                            <img src="./assets/pexels-karolina-grabowska-5207104.jpg" alt="Dra. María González"
-                                class="doctor-card-img">
+                            <img src="./assets/pexels-karolina-grabowska-5207104.jpg" alt="Dra. Carla Ruíz"
+                                alt="Dr. Carlos Martínez" class="doctor-card-img">
                             <h3 class="doctor-card-name">Dra. Carla Ruíz</h3>
                             <p class="doctor-card-specialty">Endocrinología</p>
                             <p class="doctor-card-credentials">Matricula: MN 78901</p>
                             <p class="doctor-card-experience">$20.000</p>
                             <p class="doctor-card-description">
-                                Obras sociales: OSDE, Swiss Medical, Medicus, Galeno
+                                Obras sociales: OSDE, Accord, Swiss Medical, Medicus, Galeno.
                             </p>
                             <p class="doctor-card-additional">
                                 Especialista en endocrinología con más de 12 años de experiencia en el manejo de
                                 diabetes, trastornos hormonales y control metabólico.
                             </p>
-                            <a href="./contacto.html" class="btn btn--outline doctor-card-btn">Solicitar Turno </a>
+                            <a href="./contacto.html" class="btn doctor-card-btn">Solicitar Turno</a>
                         </div>
-                    </article>
-
-                </div>
-
-                <div class="btn-profesionales">
-                    <a href="#" class="btn btn--primary">Ver todos los profesionales</a>
-                </div>
-
-        </section>
-
-        <section class="por-que-elegirnos" id="nosotros">
-            <div class="container">
-                <h2 class="section-title">¿Por qué elegirnos?</h2>
-
-                <div class="beneficios">
-                    <article class="beneficio">
-                        <div class="beneficio-icon"><i class="fa-solid fa-user-doctor"></i></div>
-                        <div class="beneficio-content">
-                            <h3 class="beneficio-title">Profesionales Certificados</h3>
-                            <p class="beneficio-description">
-                                Nuestros médicos cuentan con las más altas certificaciones y formación
-                                continua en sus especialidades.
-                            </p>
-                        </div>
-                    </article>
-
-                    <article class="beneficio">
-                        <div class="beneficio-icon"><i class="fa-solid fa-gear"></i></div>
-                        <div class="beneficio-content">
-                            <h3 class="beneficio-title">Tecnología Avanzada</h3>
-                            <p class="beneficio-description">
-                                Contamos con equipamiento de última generación para diagnósticos precisos y
-                                tratamientos efectivos.
-                            </p>
-                        </div>
-                    </article>
-
-                    <article class="beneficio">
-                        <div class="beneficio-icon"><i class="fa-solid fa-heart"></i></div>
-                        <div class="beneficio-content">
-                            <h3 class="beneficio-title">Atención Humanizada</h3>
-                            <p class="beneficio-description">
-                                Cada paciente recibe atención personalizada con calidez humana y
-                                profesionalismo excepcional.
-                            </p>
-                        </div>
-                    </article>
-                </div>
-            </div>
-        </section>
-
-        <section class="final-cta">
-            <div class="container">
-                <div class="final-cta-content">
-                    <h2 class="final-cta-title">Su bienestar no puede esperar</h2>
-                    <p class="final-cta-description">
-                        Consideramos muy importante su salud y la de diferencia de una atención médica de
-                        excelencia. Estamos aquí para cuidar de usted y su familia.
-                    </p>
-                    <div class="final-cta-actions">
-                        <a href="#profesionales" class="btn btn--outline">Ver orientación profesional</a>
-                        <a href="./contacto.html" class="btn btn--primary">Comenzar ahora</a>
                     </div>
                 </div>
             </div>
-        </section>
-    </main>
 
-    <footer class="footer" id="contacto">
+            <div class="btn-profesionales">
+                <a href="#" class="btn btn-primary" id="btn-mas-profesionales">Ver todos los profesionales</a>
+            </div>
+        </div>
+    </section>
+
+
+    <section id="nosotros" class="py-5 bg-light">
         <div class="container">
-            <div class="footer-content">
-                <div class="footer-section">
-                    <div class="footer-logo">
-                        <img src="./assets/logo-footer.png" alt="Clínica Médica" class="footer-logo-img">
-                        <div class="footer-logo-text">
-                            <h3 class="footer-logo-title">Clínica Médica</h3>
-                            <p class="footer-logo-subtitle">Medicina de la salud</p>
-                        </div>
+            <h2 class="text-center mb-5">¿Por qué elegirnos?</h2>
+
+            <div class="d-grid gap-4">
+                <div class="d-flex align-items-start p-4 bg-white shadow-sm rounded-3">
+                    <div class="beneficio-icon">
+                        <i class="fa-solid fa-user-doctor"></i>
                     </div>
-                    <p class="footer-description">
-                        Brindamos atención médica de calidad con profesionales especializados y tecnología de vanguardia
-                        para el cuidado integral de tu salud y familia.
-                    </p>
+                    <div id="beneficio-content" class="my-4">
+                        <h3 class="beneficio-title">Profesionales Certificados</h3>
+                        <p class="beneficio-description">
+                            Nuestros médicos cuentan con las más altas certificaciones y formación
+                            continua en sus especialidades.
+                        </p>
+                    </div>
                 </div>
 
-                <div class="footer-section">
-                    <h4 class="footer-title">Especialidades</h4>
-                    <ul class="footer-list">
-                        <li><a href="#profesionales" class="footer-link">Cardiología</a></li>
-                        <li><a href="#profesionales" class="footer-link">Traumatología</a></li>
-                        <li><a href="#profesionales" class="footer-link">Neurología</a></li>
-                        <li><a href="#profesionales" class="footer-link">Oftalmología</a></li>
-                        <li><a href="#profesionales" class="footer-link">Pediatría</a></li>
-                        <li><a href="#profesionales" class="footer-link">Medicina Familiar</a></li>
-                    </ul>
+                <div class="d-flex align-items-start p-4 bg-white shadow-sm rounded-3">
+                    <div class="beneficio-icon">
+                        <i class="fa-solid fa-gear"></i>
+                    </div>
+                    <div id="beneficio-content" class="my-4">
+                        <h3 class="beneficio-title">Tecnología Avanzada</h3>
+                        <p class="beneficio-description">
+                            Contamos con equipamiento de última generación para diagnósticos precisos y
+                            tratamientos efectivos.
+                        </p>
+                    </div>
                 </div>
 
-                <div class="footer-section">
-                    <h4 class="footer-title">Enlaces</h4>
-                    <ul class="footer-list">
-                        <li><a href="#inicio" class="footer-link">Inicio</a></li>
-                        <li><a href="#servicios" class="footer-link">Servicios</a></li>
-                        <li><a href="#profesionales" class="footer-link">Profesionales</a></li>
-                        <li><a href="./institucional.html" class="footer-link">Nosotros</a></li>
-                        <li><a href="./contacto.html" class="footer-link">Contacto</a></li>
-                    </ul>
-                </div>
-
-                <div class="footer-section">
-                    <h4 class="footer-title">Contacto</h4>
-                    <div class="footer-contact">
-                        <p class="footer-contact-item"><i class="fa-solid fa-location-dot"></i> Av. Corrientes 0000,
-                            CABA</p>
-                        <p class="footer-contact-item"><i class="fa-solid fa-phone"></i> +54 11 1234-5678</p>
-                        <p class="footer-contact-item"><i class="fa-solid fa-envelope"></i> info@clinicamedica.com.ar
+                <div class="d-flex align-items-start p-4 bg-white shadow-sm rounded-3">
+                    <div class="beneficio-icon">
+                        <i class="fa-solid fa-heart"></i>
+                    </div>
+                    <div id="beneficio-content" class="my-4">
+                        <h3 class="beneficio-title">Atención Humanizada</h3>
+                        <p class="beneficio-description">
+                            Cada paciente recibe atención personalizada con calidez humana y
+                            profesionalismo excepcional.
                         </p>
                     </div>
                 </div>
             </div>
+        </div>
+    </section>
 
-            <div class="footer-bottom">
-                <p class="footer-copyright">© 2024 Clínica Médica. Todos los derechos reservados.</p>
+    <section id="cta" class="py-5 bg-primary text-white text-center mb-5">
+        <div class="container">
+            <h2 class="fw-bold mb-3">Su bienestar no puede esperar</h2>
+            <p class="lead mb-4">Consideramos muy importante su salud y la de diferencia de una atención médica de
+                excelencia. Estamos aquí para cuidar de usted y su familia.</p>
+            <a href="./contacto.html" class="btn btn-light text-white" id="btn-cta">Ver orientación profesional</a>
+            <a href="./contacto.html" class="btn btn-light ms-3" id="btn-cta-contact">Comenzar ahora</a>
+        </div>
+    </section>
+
+    <footer class="text-white pt-5">
+        <div class="container">
+            <div class="row g-4 mb-4">
+                <div class="col-md-4">
+                    <div class="d-flex align-items-center mb-3">
+                        <img src="./assets/logo-footer.png" alt="logo" id="img-logo-footer" class="me-2 rounded">
+                        <div>
+                            <h5 class="mb-0">Clínica Médica</h5>
+                            <small class="text-white">Medicina de la salud</small>
+                        </div>
+                    </div>
+                    <p class="text-white">Brindamos atención médica de calidad con profesionales especializados y
+                        tecnología de vanguardia para el cuidado integral de tu salud y familia.</p>
+                </div>
+                <div class="col-md-2">
+                    <h6 class="fw-bold mb-3">Especialidades</h6>
+                    <ul class="list-unstyled">
+                        <li class="mb-2"><a href="#servicios" class="text-white text-decoration-none">Cardiología</a>
+                        </li>
+                        <li class="mb-2"><a href="#servicios" class="text-white text-decoration-none">Traumatología</a>
+                        </li>
+                        <li class="mb-2"><a href="#servicios" class="text-white text-decoration-none">Neurología</a>
+                        </li>
+                        <li class="mb-2"><a href="#servicios" class="text-white text-decoration-none">Oftalmología</a>
+                        </li>
+                        <li class="mb-2"><a href="#servicios" class="text-white text-decoration-none">Pediatría</a></li>
+                        <li class="mb-2"><a href="#servicios" class="text-white text-decoration-none">Medicina
+                                Familiar</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-md-2">
+                    <h6 class="fw-bold mb-3">Enlaces</h6>
+                    <ul class="list-unstyled">
+                        <li class="mb-2"><a href="#inicio" class="text-white text-decoration-none">Inicio</a></li>
+                        <li class="mb-2"><a href="#servicios" class="text-white text-decoration-none">Servicios</a></li>
+                        <li class="mb-2"><a href="profesionales.html"
+                                class="text-white text-decoration-none">Profesionales</a></li>
+                        <li class="mb-2"><a href="institucional.html"
+                                class="text-white text-decoration-none">Nosotros</a></li>
+                        <li class="mb-2"><a href="contacto.html" class="text-white text-decoration-none">Contacto</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-md-3">
+                    <h6 class="fw-bold mb-3">Contacto</h6>
+                    <p class="text-white mb-1"><i class="fa-solid fa-location-dot text-white me-2 mb-2"></i> Calle Falsa
+                        123, Ciudad</p>
+                    <p class="text-white mb-1"><i class="fa-solid fa-phone text-white me-2 mb-2"></i> +54 11 1234-5678
+                    </p>
+                    <p class="text-white"><i class="fa-solid fa-envelope text-white me-2 mb-2"></i> contacto@clinica.com
+                    </p>
+                </div>
+            </div>
+
+            <div class="border-top border-secondary pt-3 text-center pb-3" id="decoration-footer">
+                <small class="text-white-50" id="copy-footer">&copy; 2025 Clínica Médica. Todos los derechos
+                    reservados.</small>
             </div>
         </div>
     </footer>
 
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
     <script src="https://kit.fontawesome.com/3e593f07e0.js" crossorigin="anonymous"></script>
 </body>
 
