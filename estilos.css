@@ -1,114 +1,103 @@
-/* Reset básico */
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
+/* base */
 
-/* Tipo de letras base y fondo */
-body {
+.body-base {
   font-family: 'Open Sans', sans-serif;
-  background-color: #fafafa;
+  background-color: #f9f9f9;
   color: #333;
   line-height: 1.6;
 }
 
-/* heder y navegación */
-header {
+/*encabezado*/
+.header {
   background-color: #ffffff;
   padding: 20px 0;
+  border-bottom: 1px solid #ddd;
 }
 
-.logo {
-  font-size: 1.8rem;
+.header-logo {
+  font-size: 2rem;
+  font-weight: bold;
   color: #0077b6;
 }
 
-nav ul {
+.nav-list {
   display: flex;
   list-style: none;
   justify-content: center;
-  gap: 20px;
+  gap: 30px;
 }
 
-nav a {
+.nav-link {
   text-decoration: none;
   color: #333;
-  padding: 5px 10px;
+  font-weight: 500;
+  padding: 8px 12px;
   transition: color 0.3s;
 }
 
-nav a:hover,
-nav a.active {
+.nav-link:hover,
+.nav-link.active {
   color: #0077b6;
 }
 
-/* sección Hero */
-#hero {
+/* hero */
+.hero {
   text-align: center;
-  padding: 60px 0;
   background-color: #e0f7fa;
+  padding: 60px 20px;
 }
 
-#hero h2 {
+.hero-title {
   font-size: 2.5rem;
-  margin-bottom: 20px;
   color: #0077b6;
+  margin-bottom: 20px;
 }
 
-#hero p {
+.hero-description {
   font-size: 1.1rem;
+  max-width: 700px;
   margin: 0 auto 40px;
-  max-width: 600px;
 }
 
-/* estadísticas del Hero */
+/*estadisticas*/
 .stats {
   display: flex;
   justify-content: center;
   gap: 40px;
+  flex-wrap: wrap;
 }
 
-.stats div {
+.stats-item {
   text-align: center;
+  max-width: 200px;
 }
 
-.stats strong {
-  display: block;
-  font-size: 1.5rem;
+.stats-strong {
+  font-size: 1.8rem;
+  font-weight: bold;
   color: #0077b6;
+  display: block;
 }
 
-.stats span {
+.stats-span {
   font-size: 0.9rem;
   color: #555;
 }
 
-/* Secciones generales */
-section {
-  padding: 60px 0;
-}
-
-section h3,
-section h4,
-section h5,
-section h6 {
+/*historia*/
+.section-title {
+  font-size: 1.8rem;
   color: #0077b6;
-  margin-bottom: 15px;
+  margin-bottom: 20px;
 }
 
-/* columnas */
 .grid-2 {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 40px;
 }
 
-.grid-3 {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 30px;
-}
+/*servicios*/
 
 .grid-4 {
   display: grid;
@@ -116,29 +105,34 @@ section h6 {
   gap: 30px;
 }
 
-/* artículos y tarjetas */
-article,
-#valores div {
+.card {
   background-color: #ffffff;
   padding: 20px;
   border-radius: 8px;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
 }
 
-/* llamado a la acción */
-.cta {
-  text-align: center;
-  background-color: #0077b6;
-  color: #ffffff;
-  border-radius: 8px;
-  padding: 40px 20px;
-}
-
-.cta h3 {
+.card h5 {
+  color: #0077b6;
   margin-bottom: 10px;
 }
 
-.cta p {
+/*llamado a la accion*/
+.cta {
+  background-color: #0077b6;
+  color: #ffffff;
+  text-align: center;
+  padding: 40px 20px;
+  border-radius: 8px;
+}
+
+.cta-title {
+  font-size: 1.6rem;
+  margin-bottom: 10px;
+}
+
+.cta-text {
+  font-size: 1rem;
   margin-bottom: 20px;
 }
 
@@ -149,6 +143,7 @@ article,
   padding: 10px 20px;
   border-radius: 5px;
   text-decoration: none;
+  font-weight: bold;
   transition: background-color 0.3s;
 }
 
@@ -156,31 +151,34 @@ article,
   background-color: #e0f7fa;
 }
 
-/* Footer */
-footer {
+/* pie de página */
+.footer {
   background-color: #023e8a;
   color: #ffffff;
-  padding: 40px 0;
+  padding: 40px 20px;
 }
 
-footer h6 {
+.footer-title {
+  font-size: 1.2rem;
   margin-bottom: 10px;
 }
 
-footer ul {
+.footer-list {
   list-style: none;
+  padding: 0;
 }
 
-footer ul li {
+.footer-list-item {
   margin-bottom: 8px;
 }
 
-footer a {
+.footer-link {
   color: #ffffff;
   text-decoration: none;
 }
 
-footer p {
+.footer-text {
   font-size: 0.9rem;
   margin-top: 20px;
 }
+
