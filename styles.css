@@ -22,6 +22,7 @@
     color: #3c73a5 !important;
 }
 
+<<<<<<< HEAD
 .navbar .nav-link {
     font-weight: 500;
     color: #333 !important;
@@ -301,6 +302,8 @@
     color: #3c73a5;
 }
 
+=======
+>>>>>>> bec50b5cdd5ade0f27a1a60d9525a11569db1905
 footer {
     font-size: 0.95rem;
     background-color: #3c73a5;
@@ -318,6 +321,7 @@ footer a:hover {
     border-top: 1px solid rgba(255, 255, 255, 0.357) !important;
 }
 
+<<<<<<< HEAD
 #hero {
   text-align: center;
   background-color: #e0f7fa;
@@ -363,3 +367,25 @@ footer a:hover {
   background-color: #e0f7fa;
 }
 
+=======
+.navbar .nav-link {
+    font-weight: 500;
+    color: #333 !important;
+    transition: color 0.3s ease;
+}
+
+.navbar .nav-link:hover,
+.navbar .nav-link.active {
+    color: #3c73a5 !important;
+}
+
+#prioridad {
+    color: #3c73a5 !important;
+}
+
+#img-logo-nav,
+#img-logo-footer {
+    height: 40px;
+    width: 40px;
+}
+>>>>>>> bec50b5cdd5ade0f27a1a60d9525a11569db1905
