@@ -2,199 +2,282 @@
 <html lang="es">
 
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Clínica Médica - Tu salud, nuestra prioridad</title>
-  <meta name="description"
-    content="Atención médica profesional con especialistas altamente calificados. Reserva tu turno de forma rápida y sencilla en nuestro sistema online.">
-  <link rel="stylesheet" href="styles.css">
-  <link rel="icon" href="./assets/logo-header.png">
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Clínica Médica | Nosotros</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&family=Plus+Jakarta+Sans:wght@400;600;700&display=swap"
+    rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
-  <header class="header">
+
+  <nav class="navbar navbar-expand-lg bg-white shadow-sm sticky-top">
     <div class="container">
-      <div class="header-content">
-        <div class="header-logo">
-          <img src="./assets/logo-header.png" alt="logo clinica" class="header-logo-img">
-          <div class="header-logo-text">
-            <h1 class="header-logo-title">Clínica Médica</h1>
-            <p class="header-logo-subtitle">Medicina de la salud</p>
-          </div>
+      <a class="navbar-brand d-flex align-items-center" href="index.html">
+        <img src="./assets/logo-header.png" alt="logo clinica" class="rounded me-2" id="img-logo-nav">
+        <div>
+          <h1 class="h5 mb-0 fw-bold text-dark">Clínica Médica</h1>
+          <small class="text-muted">Medicina de la salud</small>
         </div>
+      </a>
 
-        <nav class="header-nav">
-          <ul class="nav-list">
-            <li class="nav-item"><a href="./index.html#inicio" class="nav-link nav-link--active">Inicio</a>
-            </li>
-            <li class="nav-item"><a href="./index.html#servicios" class="nav-link">Servicios</a></li>
-            <li class="nav-item"><a href="./profesionales.html" class="nav-link">Profesionales</a></li>
-            <li class="nav-item"><a href="./institucional.html" class="nav-link">Nosotros</a></li>
-            <li class="nav-item"><a href="#form-contact" class="nav-link">Contacto</a></li>
-          </ul>
-        </nav>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menuNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
 
-        <a href="#form-contact" class="btn btn--primary header-cta">Reservar Turno</a>
+      <div class="collapse navbar-collapse" id="menuNav">
+        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+          <li class="nav-item"><a class="nav-link active" href="#inicio">Inicio</a></li>
+          <li class="nav-item"><a class="nav-link" href="#servicios">Servicios</a></li>
+          <li class="nav-item"><a class="nav-link" href="profesionales.html">Profesionales</a></li>
+          <li class="nav-item"><a class="nav-link" href="institucional.html">Nosotros</a></li>
+          <li class="nav-item"><a class="nav-link" href="contacto.html">Contacto</a></li>
+        </ul>
+        <a href="contacto.html" class="btn btn-turno ms-lg-3">Reservar Turno</a>
       </div>
     </div>
-  </header>
+  </nav>
 
   <!--Aca Presentamos-->
-  <section id="hero" class="container">
-    <h2>Mas de 30 años cuidando su Salud</h2>
-    <p>MediCare es una institución medica lider que combina tradición, innovación y excelencia en el cuidado de la
-      salud.</p>
-    <div class="stats">
-      <div><strong>+50mil</strong><span> pacientes atendidos</span></div>
-      <div><strong>ISO 9001</strong><span> Certificacion</span></div>
-      <div><strong>4.9/5</strong><span> pacientes contentos</span></div>
+  <section id="hero" class="py-5">
+    <div class="container text-center">
+      <h2 class="hero-title mb-3 fs-3">Más de 30 años cuidando su Salud</h2>
+      <p class="mx-auto mb-4 text-muted" style="max-width:900px;">
+        MediCare es una institución médica líder que combina tradición, innovación y excelencia en el cuidado de la
+        salud.
+      </p>
+
+      <div class="row justify-content-center g-3">
+        <div class="col-6 col-sm-4 col-md-3 text-center">
+          <span class="stats-strong">+50mil</span>
+          <small class="d-block text-muted">pacientes atendidos</small>
+        </div>
+        <div class="col-6 col-sm-4 col-md-3 text-center">
+          <span class="stats-strong">ISO 9001</span>
+          <small class="d-block text-muted">Certificación</small>
+        </div>
+        <div class="col-6 col-sm-4 col-md-3 text-center">
+          <span class="stats-strong">4.9/5</span>
+          <small class="d-block text-muted">pacientes contentos</small>
+        </div>
+      </div>
     </div>
   </section>
 
   <!--Nuestra historia-->
-  <section id="historia" class="container">
-    <h3>Nuestra Historia</h3>
-    <p>Fundada en 1990 con una vision clara, Medicare nacio de la vision de un grupo de medicos comprometidos con
-      brindar atención medica de excelencia. Desde entonces hemos incorporado nuevas especialidades y tecnologias de
-      vanguardia.</p>
-    <p>Hoy somos una de las clinicas mas respetadas de la región, con un equipo de mas de 80 profesionales y
-      equipamiento de ultima generación.</p>
-
-  </section>
-
-  <!-- Mision y Vision + Estadisticas-->
-  <section id="mision-vision" class="container grid-2">
-    <div>
-      <h4>Misión</h4>
-      <p>Brindar atención medica integral y humanizada con los mas altos estandares de calidad.</p>
-    </div>
-    <div>
-      <h4>Visión</h4>
-      <p>Ser la clinica de referencia, reconocida por su excelencia e innovación</p>
+  <section id="historia" class="py-4">
+    <div class="container">
+      <h3 class="mb-3">Nuestra Historia</h3>
+      <p>Fundada en 1990 con una visión clara, Medicare nació de la vocación de un grupo de médicos comprometidos con
+        brindar atención médica de excelencia. Desde entonces hemos incorporado nuevas especialidades y tecnologías de
+        vanguardia.</p>
+      <p>Hoy somos una de las clínicas más respetadas de la región, con un equipo de más de 80 profesionales y
+        equipamiento de última generación.</p>
     </div>
   </section>
 
-  <section id="estaddisticas" class="container grid-3">
-    <div><span>30+</span>
-      <p>Años de experiencia</p>
+  <!-- Mision y Vision, Estasdisticas -->
+  <section id="mision-vision" class="py-4 bg-light">
+    <div class="container">
+      <div class="row g-3">
+        <div class="col-md-6">
+          <div class="card card-brand h-100">
+            <div class="card-body">
+              <h4 class="card-title">Misión</h4>
+              <p class="card-text mb-0">Brindar atención médica integral y humanizada con los más altos estándares de
+                calidad.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="card card-brand h-100">
+            <div class="card-body">
+              <h4 class="card-title">Visión</h4>
+              <p class="card-text mb-0">Ser la clínica de referencia, reconocida por su excelencia e innovación.</p>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
-    <div><span>80+</span>
-      <p>Profesionales</p>
-    </div>
-    <div><span>15</span>
-      <p>Especialidades</p>
+  </section>
+
+  <section id="estaddisticas" class="py-4">
+    <div class="container">
+      <div class="row text-center g-3">
+        <div class="col-12 col-md-4">
+          <div class="p-3 border rounded h-100">
+            <div class="fs-3 fw-bold">30+</div>
+            <div class="text-muted">Años de experiencia</div>
+          </div>
+        </div>
+        <div class="col-12 col-md-4">
+          <div class="p-3 border rounded h-100">
+            <div class="fs-3 fw-bold">80+</div>
+            <div class="text-muted">Profesionales</div>
+          </div>
+        </div>
+        <div class="col-12 col-md-4">
+          <div class="p-3 border rounded h-100">
+            <div class="fs-3 fw-bold">15</div>
+            <div class="text-muted">Especialidades</div>
+          </div>
+        </div>
+      </div>
     </div>
   </section>
 
   <!-- Servicios -->
-  <section id="servicios" class="container">
-    <h3>Nuestros Servicios</h3>
-    <div class="grid-4">
-      <article>
-        <h5>Medicina General</h5>
-        <p>Atención integral para toda la familia</p>
-      </article>
-      <article>
-        <h5>Especialidades Médicas</h5>
-        <p>Cardiología, Pediatría, Ginecología, Traumatología y más.</p>
-      </article>
-      <article>
-        <h5>Laboratorio</h5>
-        <p>Analisis clinicos con tecnologia de ultima generación.</p>
-      </article>
-      <article>
-        <h5>Urgencias 24/7</h5>
-        <p>Atención de emergencias todos los dias del año.</p>
-      </article>
+  <section id="servicios" class="py-4">
+    <div class="container">
+      <h3 class="mb-3">Nuestros Servicios</h3>
+      <div class="row g-3">
+        <div class="col-12 col-md-6 col-lg-3">
+          <article class="card card-brand h-100">
+            <div class="card-body">
+              <h5 class="card-title">Medicina General</h5>
+              <p class="card-text mb-0">Atención integral para toda la familia.</p>
+            </div>
+          </article>
+        </div>
+
+        <div class="col-12 col-md-6 col-lg-3">
+          <article class="card card-brand h-100">
+            <div class="card-body">
+              <h5 class="card-title">Especialidades Médicas</h5>
+              <p class="card-text mb-0">Cardiología, Pediatría, Ginecología, Traumatología y más.</p>
+            </div>
+          </article>
+        </div>
+
+        <div class="col-12 col-md-6 col-lg-3">
+          <article class="card card-brand h-100">
+            <div class="card-body">
+              <h5 class="card-title">Laboratorio</h5>
+              <p class="card-text mb-0">Análisis clínicos con tecnología de última generación.</p>
+            </div>
+          </article>
+        </div>
+
+        <div class="col-12 col-md-6 col-lg-3">
+          <article class="card card-brand h-100">
+            <div class="card-body">
+              <h5 class="card-title">Urgencias 24/7</h5>
+              <p class="card-text mb-0">Atención de emergencias todos los días del año.</p>
+            </div>
+          </article>
+        </div>
+      </div>
     </div>
   </section>
 
-  <!--Valores -->
-  <section id="valores" class="container grid-4">
-    <div>
-      <h5>Excelencia Medica</h5>
-      <p>Profesionales calificados con formación continua.</p>
-    </div>
-    <div>
-      <h5>Atencion Humanizada</h5>
-      <p>Trato calido y personalizado</p>
-    </div>
-    <div>
-      <h5>Tecnologia Avanzada</h5>
-      <p>Equipamiento de última generación.</p>
-    </div>
-    <div>
-      <h5>Compromiso Social</h5>
-      <p>Programas de salud comunitaria.</p>
+  <!-- Valores -->
+  <section id="valores" class="py-4 bg-white">
+    <div class="container">
+      <div class="row g-3">
+        <div class="col-12 col-md-6 col-lg-3">
+          <div class="p-3 border rounded h-100">
+            <h5 class="mb-2">Excelencia Médica</h5>
+            <p class="mb-0">Profesionales calificados con formación continua.</p>
+          </div>
+        </div>
+        <div class="col-12 col-md-6 col-lg-3">
+          <div class="p-3 border rounded h-100">
+            <h5 class="mb-2">Atención Humanizada</h5>
+            <p class="mb-0">Trato cálido y personalizado.</p>
+          </div>
+        </div>
+        <div class="col-12 col-md-6 col-lg-3">
+          <div class="p-3 border rounded h-100">
+            <h5 class="mb-2">Tecnología Avanzada</h5>
+            <p class="mb-0">Equipamiento de última generación.</p>
+          </div>
+        </div>
+        <div class="col-12 col-md-6 col-lg-3">
+          <div class="p-3 border rounded h-100">
+            <h5 class="mb-2">Compromiso Social</h5>
+            <p class="mb-0">Programas de salud comunitaria.</p>
+          </div>
+        </div>
+      </div>
     </div>
   </section>
 
   <!--Aca estaria el boton del turno -->
-  <section id="turno" class="container cta">
-    <h3>¿Necesita atención medica?</h3>
-    <p>Solicite su turno hoy mismo y reciba la mejor atención.</p>
-    <a href="./contacto.html" class="turno">Solicitar turno</a>
+  <section id="turno" class="py-4">
+    <div class="container">
+      <div class="d-flex flex-column flex-md-row align-items-center justify-content-between cta gap-3">
+        <div>
+          <h3 class="mb-1">¿Necesita atención médica?</h3>
+          <p class="mb-0 text-white-50">Solicite su turno hoy mismo y reciba la mejor atención.</p>
+        </div>
+        <div>
+          <a href="#" class="turno">Solicitar turno</a>
+        </div>
+      </div>
+    </div>
   </section>
 
   <!--Pie de pagina-->
-  <footer class="footer" id="contacto">
+  <footer class="full-footer text-white pt-5">
     <div class="container">
-      <div class="footer-content">
-        <div class="footer-section">
-          <div class="footer-logo">
-            <img src="./assets/logo-footer.png" alt="Clínica Médica" class="footer-logo-img">
-            <div class="footer-logo-text">
-              <h3 class="footer-logo-title">Clínica Médica</h3>
-              <p class="footer-logo-subtitle">Medicina de la salud</p>
+      <div class="row g-4 mb-4">
+        <div class="col-md-4">
+          <div class="d-flex align-items-center mb-3">
+            <img src="./assets/logo-footer.png" alt="logo" id="img-logo-footer" class="me-2 rounded">
+            <div>
+              <h5 class="mb-0">Clínica Médica</h5>
+              <small class="text-white">Medicina de la salud</small>
             </div>
           </div>
-          <p class="footer-description">
-            Brindamos atención médica de calidad con profesionales especializados y tecnología de vanguardia
-            para el cuidado integral de tu salud y familia.
-          </p>
+          <p class="text-white">Brindamos atención médica de calidad con profesionales especializados y tecnología de
+            vanguardia para el cuidado integral de tu salud y familia.</p>
         </div>
 
-        <div class="footer-section">
-          <h4 class="footer-title">Especialidades</h4>
-          <ul class="footer-list">
-            <li><a href="./index.html#profesionales" class="footer-link">Cardiología</a></li>
-            <li><a href="./index.html#profesionales" class="footer-link">Traumatología</a></li>
-            <li><a href="./index.html#profesionales" class="footer-link">Neurología</a></li>
-            <li><a href="./index.html#profesionales" class="footer-link">Oftalmología</a></li>
-            <li><a href="./index.html#profesionales" class="footer-link">Pediatría</a></li>
-            <li><a href="./index.html#profesionales" class="footer-link">Medicina Familiar</a></li>
+        <div class="col-md-2">
+          <h6 class="fw-bold mb-3">Especialidades</h6>
+          <ul class="list-unstyled">
+            <li class="mb-2"><a href="#servicios" class="text-white text-decoration-none">Cardiología</a></li>
+            <li class="mb-2"><a href="#servicios" class="text-white text-decoration-none">Traumatología</a></li>
+            <li class="mb-2"><a href="#servicios" class="text-white text-decoration-none">Neurología</a></li>
+            <li class="mb-2"><a href="#servicios" class="text-white text-decoration-none">Oftalmología</a></li>
+            <li class="mb-2"><a href="#servicios" class="text-white text-decoration-none">Pediatría</a></li>
+            <li class="mb-2"><a href="#servicios" class="text-white text-decoration-none">Medicina Familiar</a></li>
           </ul>
         </div>
 
-        <div class="footer-section">
-          <h4 class="footer-title">Enlaces</h4>
-          <ul class="footer-list">
-            <li><a href="./index.html#inicio" class="footer-link">Inicio</a></li>
-            <li><a href="./index.html#servicios" class="footer-link">Servicios</a></li>
-            <li><a href="./profesionales.html" class="footer-link">Profesionales</a></li>
-            <li><a href="./institucional.html" class="footer-link">Nosotros</a></li>
-            <li><a href="./contacto.html" class="footer-link">Contacto</a></li>
+        <div class="col-md-2">
+          <h6 class="fw-bold mb-3">Enlaces</h6>
+          <ul class="list-unstyled">
+            <li class="mb-2"><a href="#inicio" class="text-white text-decoration-none">Inicio</a></li>
+            <li class="mb-2"><a href="#servicios" class="text-white text-decoration-none">Servicios</a></li>
+            <li class="mb-2"><a href="profesionales.html" class="text-white text-decoration-none">Profesionales</a></li>
+            <li class="mb-2"><a href="institucional.html" class="text-white text-decoration-none">Nosotros</a></li>
+            <li class="mb-2"><a href="contacto.html" class="text-white text-decoration-none">Contacto</a></li>
           </ul>
         </div>
 
-        <div class="footer-section">
-          <h4 class="footer-title">Contacto</h4>
-          <div class="footer-contact">
-            <p class="footer-contact-item"><i class="fa-solid fa-location-dot"></i> Av. Corrientes 0000,
-              CABA</p>
-            <p class="footer-contact-item"><i class="fa-solid fa-phone"></i> +54 11 1234-5678</p>
-            <p class="footer-contact-item"><i class="fa-solid fa-envelope"></i> info@clinicamedica.com.ar
-            </p>
-          </div>
+        <div class="col-md-3">
+          <h6 class="fw-bold mb-3">Contacto</h6>
+          <p class="text-white mb-1"><i class="fa-solid fa-location-dot text-white me-2 mb-2"></i> Calle Falsa 123,
+            Ciudad</p>
+          <p class="text-white mb-1"><i class="fa-solid fa-phone text-white me-2 mb-2"></i> +54 11 1234-5678</p>
+          <p class="text-white"><i class="fa-solid fa-envelope text-white me-2 mb-2"></i> contacto@clinica.com</p>
         </div>
       </div>
 
-      <div class="footer-bottom">
-        <p class="footer-copyright">© 2024 Clínica Médica. Todos los derechos reservados.</p>
+      <div class="border-top border-secondary pt-3 text-center pb-3" id="decoration-footer">
+        <small class="text-white-50" id="copy-footer">&copy; 2025 Clínica Médica. Todos los derechos reservados.</small>
       </div>
     </div>
   </footer>
-  <script src="https://kit.fontawesome.com/3e593f07e0.js" crossorigin="anonymous"></script>
+
+  <!-- Bootstrap  -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 
 </html>
