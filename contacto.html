@@ -7,134 +7,154 @@
     <title>Clínica Médica - Tu salud, nuestra prioridad</title>
     <meta name="description"
         content="Atención médica profesional con especialistas altamente calificados. Reserva tu turno de forma rápida y sencilla en nuestro sistema online.">
-    <link rel="stylesheet" href="styles.css">
     <link rel="icon" href="./assets/logo-header.png">
-    <link rel="stylesheet" href="styleform.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&family=Questrial&family=Quicksand:wght@300..700&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
 </head>
 
 <body>
-    <header class="header">
+    <nav class="navbar navbar-expand-lg bg-white shadow-sm sticky-top">
         <div class="container">
-            <div class="header-content">
-                <div class="header-logo">
-                    <img src="./assets/logo-header.png" alt="logo clinica" class="header-logo-img">
-                    <div class="header-logo-text">
-                        <h1 class="header-logo-title">Clínica Médica</h1>
-                        <p class="header-logo-subtitle">Medicina de la salud</p>
-                    </div>
+            <a class="navbar-brand d-flex align-items-center" href="index.html">
+                <img src="./assets/logo-header.png" alt="logo clinica" class="rounded me-2" id="img-logo-nav">
+                <div>
+                    <h1 class="h5 mb-0 fw-bold text-dark">Clínica Médica</h1>
+                    <small class="text-muted">Medicina de la salud</small>
                 </div>
+            </a>
 
-                <nav class="header-nav">
-                    <ul class="nav-list">
-                        <li class="nav-item"><a href="./index.html#inicio" class="nav-link nav-link--active">Inicio</a>
-                        </li>
-                        <li class="nav-item"><a href="./index.html#servicios" class="nav-link">Servicios</a></li>
-                        <li class="nav-item"><a href="./profesionales.html" class="nav-link">Profesionales</a></li>
-                        <li class="nav-item"><a href="./institucional.html" class="nav-link">Nosotros</a></li>
-                        <li class="nav-item"><a href="#form-contact" class="nav-link">Contacto</a></li>
-                    </ul>
-                </nav>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menuNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
 
-                <a href="#form-contact" class="btn btn--primary header-cta">Reservar Turno</a>
+            <div class="collapse navbar-collapse" id="menuNav">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                    <li class="nav-item"><a class="nav-link active" href="index.html#inicio">Inicio</a></li>
+                    <li class="nav-item"><a class="nav-link" href="index.html#servicios">Servicios</a></li>
+                    <li class="nav-item"><a class="nav-link" href="profesionales.html">Profesionales</a></li>
+                    <li class="nav-item"><a class="nav-link" href="institucional.html">Nosotros</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contacto.html">Contacto</a></li>
+                </ul>
+                <a href="contacto.html" class="btn btn-turno ms-lg-3">Reservar Turno</a>
             </div>
         </div>
-    </header>
-    <main>
-        <h2 class="titulo-form">Contacto</h2>
-        <h3 class="titulo-form">Puede dejarnos su mensaje completando el formulario</h3>
+    </nav>
 
-        <form>
-            <div>
-                <label for="nombre_y_apellido">Nombre y Apellido:</label>
-                <input type="text" id="nombre_y_apellido" name="nombre" required>
+    <main class="container my-5">
+        <h2 class="text-center">Contacto</h2>
+        <h3 class="text-center mb-4">Puede dejarnos su mensaje completando el formulario</h3>
+
+
+        <form class="row g-3">
+            <div class="col-12 col-md-6">
+                <label for="nombre_y_apellido" class="form-label">Nombre y Apellido</label>
+                <input type="text" class="form-control" id="nombre_y_apellido" name="nombre" required>
             </div>
 
-            <div>
-                <label for="correo_electronico">Correo electrónico:</label>
-                <input type="email" id="correo_electronico" name="email" required>
+            <div class="col-12 col-md-6">
+                <label for="correo_electronico" class="form-label">Correo electrónico</label>
+                <input type="email" class="form-control" id="correo_electronico" name="email" required>
             </div>
 
-            <div>
-                <label for="asunto">Asunto:</label>
-                <input type="text" id="asunto" name="asunto">
+            <div class="col-12">
+                <label for="asunto" class="form-label">Asunto</label>
+                <input type="text" class="form-control" id="asunto" name="asunto">
             </div>
 
-            <div>
-                <label for="deje_su_mensaje">Deje su mensaje:</label>
-                <textarea id="deje_su_mensaje" name="mensaje" required></textarea>
+            <div class="col-12">
+                <label for="deje_su_mensaje" class="form-label">Deje su mensaje</label>
+                <textarea class="form-control" id="deje_su_mensaje" name="mensaje" rows="4" required></textarea>
             </div>
 
-            <button type="submit" class="button-form-contact">Enviar</button>
+            <div class="col-12 text-center">
+                <button type="submit" class="btn btn-success px-4">Enviar</button>
+            </div>
         </form>
 
 
-        <div class="info-contacto" id="form-contact">
+        <div class="mt-5" id="form-contact">
             <p>Estamos aquí para atenderle. Contáctenos para solicitar turno, consultas o cualquier información que
                 necesite.</p>
-            <p><strong>Emergencia:</strong> +54 11 4000-0911 <span class="tag">Disponible 24/7</span></p>
-            <p><strong>Teléfono Principal:</strong> +54 11 4000-0000 <span class="tag">Atención telefónica y
-                    turnos</span></p>
-            <p><strong>Email:</strong> info@medicare.com.ar <span class="tag">Consultas generales</span></p>
+            <p><strong>Emergencia:</strong> +54 11 4000-0911 <span class="badge bg-danger">Disponible 24/7</span></p>
+            <p><strong>Teléfono Principal:</strong> +54 11 4000-0000 <span class="badge bg-primary">Atención telefónica
+                    y turnos</span></p>
+            <p><strong>Email:</strong> info@medicare.com.ar <span class="badge bg-secondary">Consultas generales</span>
+            </p>
             <p><strong>Ubicación:</strong> Av. Corrientes 1234, Buenos Aires, Argentina</p>
         </div>
     </main>
-</body>
-<footer class="footer" id="contacto">
-    <div class="container">
-        <div class="footer-content">
-            <div class="footer-section">
-                <div class="footer-logo">
-                    <img src="./assets/logo-footer.png" alt="Clínica Médica" class="footer-logo-img">
-                    <div class="footer-logo-text">
-                        <h3 class="footer-logo-title">Clínica Médica</h3>
-                        <p class="footer-logo-subtitle">Medicina de la salud</p>
+
+
+    <footer class="text-white pt-5">
+        <div class="container">
+            <div class="row g-4 mb-4">
+                <div class="col-md-4">
+                    <div class="d-flex align-items-center mb-3">
+                        <img src="./assets/logo-footer.png" alt="logo" id="img-logo-footer" class="me-2 rounded">
+                        <div>
+                            <h5 class="mb-0">Clínica Médica</h5>
+                            <small class="text-white">Medicina de la salud</small>
+                        </div>
                     </div>
+                    <p class="text-white">Brindamos atención médica de calidad con profesionales especializados y
+                        tecnología de vanguardia para el cuidado integral de tu salud y familia.</p>
                 </div>
-                <p class="footer-description">
-                    Brindamos atención médica de calidad con profesionales especializados y tecnología de vanguardia
-                    para el cuidado integral de tu salud y familia.
-                </p>
-            </div>
-
-            <div class="footer-section">
-                <h4 class="footer-title">Especialidades</h4>
-                <ul class="footer-list">
-                    <li><a href="./index.html#profesionales" class="footer-link">Cardiología</a></li>
-                    <li><a href="./index.html#profesionales" class="footer-link">Traumatología</a></li>
-                    <li><a href="./index.html#profesionales" class="footer-link">Neurología</a></li>
-                    <li><a href="./index.html#profesionales" class="footer-link">Oftalmología</a></li>
-                    <li><a href="./index.html#profesionales" class="footer-link">Pediatría</a></li>
-                    <li><a href="./index.html#profesionales" class="footer-link">Medicina Familiar</a></li>
-                </ul>
-            </div>
-
-            <div class="footer-section">
-                <h4 class="footer-title">Enlaces</h4>
-                <ul class="footer-list">
-                    <li><a href="./index.html#inicio" class="footer-link">Inicio</a></li>
-                    <li><a href="./index.html#servicios" class="footer-link">Servicios</a></li>
-                    <li><a href="./profesionales.html" class="footer-link">Profesionales</a></li>
-                    <li><a href="./institucional.html" class="footer-link">Nosotros</a></li>
-                    <li><a href="./contacto.html" class="footer-link">Contacto</a></li>
-                </ul>
-            </div>
-
-            <div class="footer-section">
-                <h4 class="footer-title">Contacto</h4>
-                <div class="footer-contact">
-                    <p class="footer-contact-item"><i class="fa-solid fa-location-dot"></i> Av. Corrientes 0000,
-                        CABA</p>
-                    <p class="footer-contact-item"><i class="fa-solid fa-phone"></i> +54 11 1234-5678</p>
-                    <p class="footer-contact-item"><i class="fa-solid fa-envelope"></i> info@clinicamedica.com.ar
+                <div class="col-md-2">
+                    <h6 class="fw-bold mb-3">Especialidades</h6>
+                    <ul class="list-unstyled">
+                        <li class="mb-2"><a href="index.html#servicios" class="text-white text-decoration-none">Cardiología</a>
+                        </li>
+                        <li class="mb-2"><a href="index.html#servicios" class="text-white text-decoration-none">Traumatología</a>
+                        </li>
+                        <li class="mb-2"><a href="index.html#servicios" class="text-white text-decoration-none">Neurología</a>
+                        </li>
+                        <li class="mb-2"><a href="index.html#servicios" class="text-white text-decoration-none">Oftalmología</a>
+                        </li>
+                        <li class="mb-2"><a href="index.html#servicios" class="text-white text-decoration-none">Pediatría</a></li>
+                        <li class="mb-2"><a href="index.html#servicios" class="text-white text-decoration-none">Medicina
+                                Familiar</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-md-2">
+                    <h6 class="fw-bold mb-3">Enlaces</h6>
+                    <ul class="list-unstyled">
+                        <li class="mb-2"><a href="index.html#inicio" class="text-white text-decoration-none">Inicio</a></li>
+                        <li class="mb-2"><a href="index.html#servicios" class="text-white text-decoration-none">Servicios</a></li>
+                        <li class="mb-2"><a href="profesionales.html"
+                                class="text-white text-decoration-none">Profesionales</a></li>
+                        <li class="mb-2"><a href="institucional.html"
+                                class="text-white text-decoration-none">Nosotros</a></li>
+                        <li class="mb-2"><a href="contacto.html" class="text-white text-decoration-none">Contacto</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-md-3">
+                    <h6 class="fw-bold mb-3">Contacto</h6>
+                    <p class="text-white mb-1"><i class="fa-solid fa-location-dot text-white me-2 mb-2"></i> Calle Falsa
+                        123, Ciudad</p>
+                    <p class="text-white mb-1"><i class="fa-solid fa-phone text-white me-2 mb-2"></i> +54 11 1234-5678
+                    </p>
+                    <p class="text-white"><i class="fa-solid fa-envelope text-white me-2 mb-2"></i> contacto@clinica.com
                     </p>
                 </div>
             </div>
-        </div>
 
-        <div class="footer-bottom">
-            <p class="footer-copyright">© 2024 Clínica Médica. Todos los derechos reservados.</p>
+            <div class="border-top border-secondary pt-3 text-center pb-3" id="decoration-footer">
+                <small class="text-white-50" id="copy-footer">&copy; 2025 Clínica Médica. Todos los derechos
+                    reservados.</small>
+            </div>
         </div>
-    </div>
-</footer>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://kit.fontawesome.com/3e593f07e0.js" crossorigin="anonymous"></script>
+</body>
 
 </html>
