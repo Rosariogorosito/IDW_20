@@ -1,101 +1,55 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Clínica Médica | Nosotros</title>
-
-  <!-- Bootstrap -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
-
-  <!-- Font  (para íconos usados en el footer) -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer" />
-
-  <!-- Fuente -->
-  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&family=Plus+Jakarta+Sans:wght@400;600;700&display=swap" rel="stylesheet">
-
-  <style>
-    :root { --brand: #3c73a5; --brand-contrast: #ffffff; }
-
-    /* Reset global */
-    * { margin:0; padding:0; box-sizing:border-box; scroll-behavior:smooth; }
-    html,body { height:100%; }
-    body {
-      font-family: "Open Sans", "Plus Jakarta Sans", sans-serif;
-      background-color: #bbe7ed;
-      color: #0077b6;
-      line-height: 1.6;
-    }
-
-    /* reglas  */
-    .logo { color: var(--brand); font-weight:700; letter-spacing:0.3px; font-size:1.75rem; }
-    .hero-title { color: var(--brand); }
-    .stats-strong { color: var(--brand); font-weight:700; display:block; font-size:1.5rem; }
-    .cta { background: var(--brand); color:var(--brand-contrast); border-radius:.5rem; padding:1.75rem; }
-    .turno { background:#fff; color:var(--brand); border-radius:.5rem; padding:.5rem 1rem; text-decoration:none; font-weight:700; display:inline-block; }
-    .card-brand { border-radius:.5rem; box-shadow:0 2px 6px rgba(0,0,0,.08); }
-
-    /* Nav */
-    .navbar-toggler { border: transparent !important; }
-    .navbar-toggler:focus { border-color: var(--brand) !important; box-shadow: 0 0 5px rgba(60,115,165,0.25) !important; }
-    .navbar .nav-link { font-weight:500; color:#333 !important; transition: color .3s ease; }
-    .navbar .nav-link:hover, .navbar .nav-link.active { color: var(--brand) !important; }
-
-    /* btn-turno (aplica al botón en la navbar del fragmento) */
-    .btn-turno {
-      background: var(--brand);
-      color: #fff;
-      border: none;
-      padding: .45rem .9rem;
-      border-radius: .35rem;
-      font-weight:600;
-    }
-    .btn-turno:hover { opacity: .95; color:#fff; }
-
-    /* Tamaño de los Logos  */
-    #img-logo-nav, #img-logo-footer { height:40px; width:40px; object-fit:cover; }
-
-    /*estilo pie de pagina */
-    footer.full-footer {
-      font-size: .95rem;
-      background-color: #3c73a5;
-      color: #fff;
-    }
-    footer.full-footer a { transition: color .3s ease; color: #fff; }
-    footer.full-footer a:hover { color: #fff !important; opacity:.9; }
-    #decoration-footer { border-top: 1px solid rgba(255,255,255,.357) !important; }
-
-    /* detalles */
-    .text-white-50 { color: rgba(255,255,255,.75); }
-  </style>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&family=Plus+Jakarta+Sans:wght@400;600;700&display=swap"
+    rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
 </head>
+
 <body>
 
-  <!--Aca navegamos perri-->
-  <header class="border-bottom py-3 bg-white">
-    <div class="container d-flex flex-column flex-md-row align-items-center justify-content-between gap-3">
-      <div class="d-flex align-items-center gap-3">
-        <h1 class="logo mb-0">Medicare</h1>
-      </div>
+  <nav class="navbar navbar-expand-lg bg-white shadow-sm sticky-top">
+    <div class="container">
+      <a class="navbar-brand d-flex align-items-center" href="index.html">
+        <img src="./assets/logo-header.png" alt="logo clinica" class="rounded me-2" id="img-logo-nav">
+        <div>
+          <h1 class="h5 mb-0 fw-bold text-dark">Clínica Médica</h1>
+          <small class="text-muted">Medicina de la salud</small>
+        </div>
+      </a>
 
-      <nav class="w-100">
-        <ul class="nav nav-pills justify-content-center justify-content-md-end gap-2 mb-0">
-          <li class="nav-item"><a class="nav-link" href="#">Inicio</a></li>
-          <li class="nav-item"><a class="nav-link" href="#">Servicios</a></li>
-          <li class="nav-item"><a class="nav-link" href="#">Profesionales</a></li>
-          <li class="nav-item"><a class="nav-link active" href="#">Nosotros</a></li>
-          <li class="nav-item"><a class="nav-link" href="#">Contacto</a></li>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menuNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="menuNav">
+        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+          <li class="nav-item"><a class="nav-link active" href="#inicio">Inicio</a></li>
+          <li class="nav-item"><a class="nav-link" href="#servicios">Servicios</a></li>
+          <li class="nav-item"><a class="nav-link" href="profesionales.html">Profesionales</a></li>
+          <li class="nav-item"><a class="nav-link" href="institucional.html">Nosotros</a></li>
+          <li class="nav-item"><a class="nav-link" href="contacto.html">Contacto</a></li>
         </ul>
-      </nav>
+        <a href="contacto.html" class="btn btn-turno ms-lg-3">Reservar Turno</a>
+      </div>
     </div>
-  </header>
+  </nav>
 
   <!--Aca Presentamos-->
   <section id="hero" class="py-5">
     <div class="container text-center">
       <h2 class="hero-title mb-3 fs-3">Más de 30 años cuidando su Salud</h2>
       <p class="mx-auto mb-4 text-muted" style="max-width:900px;">
-        MediCare es una institución médica líder que combina tradición, innovación y excelencia en el cuidado de la salud.
+        MediCare es una institución médica líder que combina tradición, innovación y excelencia en el cuidado de la
+        salud.
       </p>
 
       <div class="row justify-content-center g-3">
@@ -119,8 +73,11 @@
   <section id="historia" class="py-4">
     <div class="container">
       <h3 class="mb-3">Nuestra Historia</h3>
-      <p>Fundada en 1990 con una visión clara, Medicare nació de la vocación de un grupo de médicos comprometidos con brindar atención médica de excelencia. Desde entonces hemos incorporado nuevas especialidades y tecnologías de vanguardia.</p>
-      <p>Hoy somos una de las clínicas más respetadas de la región, con un equipo de más de 80 profesionales y equipamiento de última generación.</p>
+      <p>Fundada en 1990 con una visión clara, Medicare nació de la vocación de un grupo de médicos comprometidos con
+        brindar atención médica de excelencia. Desde entonces hemos incorporado nuevas especialidades y tecnologías de
+        vanguardia.</p>
+      <p>Hoy somos una de las clínicas más respetadas de la región, con un equipo de más de 80 profesionales y
+        equipamiento de última generación.</p>
     </div>
   </section>
 
@@ -132,7 +89,8 @@
           <div class="card card-brand h-100">
             <div class="card-body">
               <h4 class="card-title">Misión</h4>
-              <p class="card-text mb-0">Brindar atención médica integral y humanizada con los más altos estándares de calidad.</p>
+              <p class="card-text mb-0">Brindar atención médica integral y humanizada con los más altos estándares de
+                calidad.</p>
             </div>
           </div>
         </div>
@@ -276,7 +234,8 @@
               <small class="text-white">Medicina de la salud</small>
             </div>
           </div>
-          <p class="text-white">Brindamos atención médica de calidad con profesionales especializados y tecnología de vanguardia para el cuidado integral de tu salud y familia.</p>
+          <p class="text-white">Brindamos atención médica de calidad con profesionales especializados y tecnología de
+            vanguardia para el cuidado integral de tu salud y familia.</p>
         </div>
 
         <div class="col-md-2">
@@ -304,7 +263,8 @@
 
         <div class="col-md-3">
           <h6 class="fw-bold mb-3">Contacto</h6>
-          <p class="text-white mb-1"><i class="fa-solid fa-location-dot text-white me-2 mb-2"></i> Calle Falsa 123, Ciudad</p>
+          <p class="text-white mb-1"><i class="fa-solid fa-location-dot text-white me-2 mb-2"></i> Calle Falsa 123,
+            Ciudad</p>
           <p class="text-white mb-1"><i class="fa-solid fa-phone text-white me-2 mb-2"></i> +54 11 1234-5678</p>
           <p class="text-white"><i class="fa-solid fa-envelope text-white me-2 mb-2"></i> contacto@clinica.com</p>
         </div>
@@ -319,4 +279,5 @@
   <!-- Bootstrap  -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 </body>
+
 </html>
