@@ -1,4 +1,3 @@
-
 export const DOCTORES_INICIALES = [
     {
         id: 1,
