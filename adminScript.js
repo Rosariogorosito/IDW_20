@@ -100,3 +100,18 @@ export const eliminarMedico = (id) => {
     }
     return false;
 };
+
+const usuarioActivo = localStorage.getItem("usuarioActivo");
+
+if (!usuarioActivo) {
+  window.location.replace("index.html"); 
+}
+
+const logoutBtn = document.getElementById("logoutBtn");
+
+if (logoutBtn) {
+  logoutBtn.addEventListener("click", () => {
+    localStorage.removeItem("usuarioActivo");
+    window.location.replace("index.html");
+  });
+}
